@@ -40,13 +40,6 @@
             <!-- App Search-->
             <form class="app-search d-none d-lg-block">
                 <div class="position-relative">
-                    <select class="form-control">
-                        <option value="">Select One</option>
-                         <option value="1">Option One</option>
-                         <option value="2">Option Two</option>
-                    </select>
-
-                    <span class="bx bx-search-alt"></span>
                 </div>
             </form>
         </div>
@@ -76,21 +69,10 @@
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item waves-effect"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{-- <span class="fa-stack fa-2x" data-count="{{ count($notifications) }}">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-bell fa-stack fa-inverse font-size-18"></i>
-                    </span> --}}
-                    <i class="fas fa-bell font-size-large rounded-circle mr-0" style="font-size: 18px;"></i><sub
-                class="badge badge-danger p-1 m-0" style="border-radius: 50%;">{{ count($notifications) }}</sub>
+                   
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
 
-                    <!-- item-->
-                    @foreach ($notifications as $notification)
-                    <a href="{{ route('order.order-list',['id'=>$notification->order_id]) }}" class="dropdown-item notify-item">
-                        <div>{{$notification->Contact->first_name}} {{$notification->Contact->mobile}}</div>
-                    </a>
-                    @endforeach
 
                 </div>
             </div>

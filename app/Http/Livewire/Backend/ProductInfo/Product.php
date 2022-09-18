@@ -153,27 +153,13 @@ class Product extends Component
     {
 
         $this->validate([
-            'code' => 'required',
-            'name' => 'required',
-            'category_id' => 'required',
-            // 'sub_category_id' => 'required',
-            // 'sub_sub_category_id' => 'required',
-            'product_feature_id' => 'required',
-            // 'brand_id' => 'required',
-            'regular_price' => 'required',
-            // 'special_price' => 'required',
-            // 'wholesale_price' => 'required',
-            // 'purchase_price' => 'required',
-            // 'warehouse_id' => 'required',
-            'in_stock' => 'required',
-            // 'is_active' => 'required',
+            'name' => 'required'
         ]);
 
 
         if (!$this->ProductId) {
             $this->validate([
-                'product_image' => 'required',
-                // 'is_active' => 'required',
+                'product_image' => 'required'
             ]);
         }
         DB::transaction(function () {
@@ -191,25 +177,7 @@ class Product extends Component
                 }
             }
 
-            $Query->code = $this->code;
             $Query->name = $this->name;
-
-            $Query->regular_price = $this->regular_price;
-            $Query->special_price = $this->special_price;
-            $Query->wholesale_price = $this->wholesale_price;
-            $Query->purchase_price = $this->purchase_price;
-            $Query->discount = $this->discount;
-            $Query->category_id = $this->category_id;
-            $Query->sub_category_id = $this->sub_category_id;
-            $Query->sub_sub_category_id = $this->sub_sub_category_id;
-            $Query->brand_id = $this->brand_id;
-            $Query->product_feature_id = $this->product_feature_id;
-            $Query->key_word = $this->key_word;
-            $Query->min_order_qty = $this->min_order_qty;
-            // $Query->contact_id=$this->contact_id;
-            $Query->low_alert = $this->low_alert;
-            $Query->guarantee = $this->guarantee;
-            $Query->vat_id = $this->vat_id;
             $Query->is_active = $this->is_active;
             $Query->in_stock = $this->in_stock;
             $Query->branch_id = Auth::user()->branch_id;

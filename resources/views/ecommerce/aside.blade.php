@@ -26,30 +26,7 @@
 
             <nav class="side-nav" style="margin-left: 60px;">
                 <ul class="menu menu-vertical sf-arrows d-block no-superfish">
-                    @foreach ($categories as $category)
-                    <li>
-                        <a href="{{ route('search-category-wise',['id'=>$category->id]) }}" style="font-size: 12px; font-weight: normal;">{{$category->name}}<span
-                                class="sf-with-ul menu-btn" style="font-size: 12px;"></span></a>
-
-                                <div class="megamenu megamenu-fixed-width megamenu-one">
-                                    <div class="row">
-                                        @foreach ($category->SubCategory as $subCategory)
-                                        <div class="col-lg-3 mb-1 pb-2">
-                                            <a href="#" class="nolink pl-0 d-lg-none d-block">VARIATION
-                                                1</a>
-                                            <a href="{{ route('search-subCategory-wise', ['id' => $subCategory->id]) }}" class="nolink pl-0">{{$subCategory->name}}</a>
-                                            <ul class="submenu">
-                                                @foreach ($subCategory->SubSubCategory as $subSubCategory)
-                                                <li><a href="{{ route('search-subSubCategory-wise', ['id' => $subSubCategory->id]) }}">{{ $subSubCategory->name }}</a></li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                        @endforeach
-                                    </div>
-                                </div>
-                            <!-- End .megamenu -->
-                        </li>
-                    @endforeach
+                   
                 </ul>
             </nav>
 

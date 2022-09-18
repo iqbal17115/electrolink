@@ -112,10 +112,7 @@
                                 id="search_product_name" placeholder="Search..." required>
                             <div class="select-custom">
                                 <select id="cat" name="cat">
-                                    <option value="">All Categories</option>
-                                    @foreach ($categories as $category)
-                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
-                                    @endforeach
+                                  
                                 </select>
                             </div>
                             <!-- End .select-custom -->
@@ -162,7 +159,6 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
                             <i class="icon-cart-thick"></i>
                             <span class="cart-count badge-circle bg-info">
-                                {{ $cardBadge['data']['number_of_product'] }}
                             </span>
                         </a>
 

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2022 at 06:19 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 7.4.15
+-- Generation Time: Sep 18, 2022 at 08:20 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `sohan_ecom`
+-- Database: `electrolink`
 --
 
 -- --------------------------------------------------------
@@ -214,7 +214,7 @@ CREATE TABLE `company_infos` (
 --
 
 INSERT INTO `company_infos` (`id`, `name`, `phone`, `mobile`, `address`, `video_title`, `hotline`, `email`, `web`, `logo`, `video_link`, `facebook_link`, `youtube_link`, `privacy_policy`, `google_map_location`, `terms_condition`, `about_us`, `return_policy`, `branch_id`, `created_by`, `is_active`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Sohan Ecommerce', '01408979487', '01408979487', '123 Wall Street, New York / NY', NULL, '01408979487', 'demo@gmail.com', NULL, '9CrYBEtEeri1RYbdJpYXecK9vptXt5NZ0ibAUDUm.png', NULL, NULL, NULL, '<div id=\"shopify-section-page-template\" class=\"shopify-section\">\n<div class=\"\">\n<div class=\"page-wrapper \">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-md-12\">\n<div class=\"rte-page \">\n<div id=\"pt-pageContent\" class=\"show_unavailable_variants\">\n<div class=\"container-indent\">\n<div class=\"container\">\n<p>Massive Impacts ensures that your privacy is protected when you use our services. This applies to our website&nbsp;<a href=\"http://www.massive-impacts.com/\">www.massive-impacts.com</a>. We have a comprehensive policy that covers all the perspectives.</p>\n<p>Personal data</p>\n<p>Massive Impacts does not store, sell and share your personal data with any third parties. This includes all your credit/debit card information as well as any personal information. It will never rent or lease out this information to any third parties. &nbsp;</p>\n<p>We take your privacy very seriously. If anything contained in this privacy policy does not agree with you, please discontinue the use of our services at the earliest.</p>\n<p>&nbsp;</p>\n<p><strong>How do we use your data?</strong></p>\n<p>We use your data only to provide you with our services as per your expectation. This includes marketing offers and relevant information. It does not include any other purpose</p>\n<p><a href=\"http://www.massive-impacts.com/\">www.massive-impacts.com</a>&nbsp;will not pass any debit/credit card details to&nbsp;third parties, whatsoever they may be.</p>\n<p>All credit/debit cards&rsquo; details and personally identifiable information will NOT be stored, sold, shared, rented or leased to any third parties.&nbsp;<a href=\"http://www.massive-impacts.com/\">www.massive-impacts.com</a>&nbsp;will not pass any debit/credit card details to&nbsp;third parties</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p><strong>What information do we use?</strong></p>\n<p>We only collect the personal information that YOU share with us. This includes any or all information that you share for the purpose of buying our services, when you participate on activities on our website and contact us. We collect names; email addresses; mailing addresses; billing addresses; contact preferences; and other similar information.</p>\n<p>&lsquo;&rsquo;www.massive-impacts.com takes appropriate steps to ensure data privacy and security including through various hardware and software methodologies. However, (www.massive-impacts.com) cannot guarantee the security of any information that is disclosed online&rsquo;&rsquo;</p>\n<p>Any information you share is based on legal business interests and comes in fulfillment of our contract with you. It is in compliance our legal obligations and goes with your consent.</p>\n<p>&nbsp;</p>\n<p><strong>Additional Points</strong></p>\n<p><a href=\"http://www.massive-impacts.com/\">www.massive-impacts.com</a>&nbsp;is not responsible for the privacy policies of websites to which it links. If you provide any information to such third parties different rules regarding the collection and use of your personal information may apply. You should contact these entities directly if you have any questions about their use of the information that they collect.</p>\n<p>The Website Policies and Terms &amp; Conditions may be changed or updated occasionally to meet the requirements and standards.</p>\n<p>Therefore, the Customers&rsquo; are encouraged to frequently visit these sections to be updated about the changes on the website. Modifications will be effective on the day they are posted&rdquo;.</p>\n</div>\n</div>\n</div>\n<div id=\"shopify-section-footer-template\" class=\"shopify-section\">\n<div id=\"shopify-section-1594730339187\" class=\"shopify-section index-section \">\n<div class=\"container-indent\">\n<div class=\"container\">&nbsp;</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div id=\"shopify-section-newsletter-bar\" class=\"shopify-section\"></div>\n<div id=\"shopify-section-footer\" class=\"shopify-section\">\n<div data-section-id=\"footer\" data-section-type=\"footer-section\"><footer class=\"footer-main-standard\">\n<div class=\"container\">\n<div class=\"row\" data-gutter=\"60\">\n<div class=\"col-sm-4 footer-col\">&nbsp;</div>\n</div>\n</div>\n</footer></div>\n</div>', 'https://www.google.com.bd/maps/place/Shomikaron/@23.746663,90.3945468,17z/data=!3m1!4b1!4m5!3m4!1s0x3755b962165c30f5:0xe304ef627c4831bc!8m2!3d23.7466581!4d90.3967355', '<p>To protect your website, company, and customers, you need to state your terms of use in clear, simple, and easily understood language. Our simple terms and conditions template can instantly generate a custom terms of service policy for your business.</p>\n<p>Once your free terms of service policy is generated, you&rsquo;ll be able to continue customizing and making adjustments until it&rsquo;s perfect. Fill out the simple form below to get started.</p>', '<div class=\"new-module new-module__type-text new-grid-center \">\n<div class=\"prose\">\n<h2>Detailed Design</h2>\n<h4>PENCILS. POST-ITS. WHITEBOARDS.</h4>\n<p>Every project at Buuuk is led by a focus on design. It starts with thorough research and careful attention to detail. The key to delivering a memorable software solution is to present unique &amp; innovative solutions in a likeable and usable interface.We understand this and that is why, the project design lead is present in every client meeting.</p>\n</div>\n</div>\n<div class=\"new-module__type-columnsOpen new-grid-right \">\n<ul class=\"columns-grid columns-grid-3 \">\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m913548515 brand-one fill-bs-purple new-module-padded prose\">\n<div class=\"prose\">\n<h3>User Experience</h3>\n<p><em>Did you know</em>&nbsp;we have our own community of helpers who help us with research and user experience testing?</p>\n</div>\n</div>\n</li>\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m793710779 brand-one fill-bs-purple new-module-padded prose\">\n<div class=\"prose\">\n<h3>User Interface</h3>\n<p>UI design, animation prototyping and icon design is what we\'re really good at. It\'s not the only thing we\'re really good at though.</p>\n</div>\n</div>\n</li>\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m1215838384 brand-one fill-bs-purple new-module-padded prose\">\n<div class=\"prose\">\n<h3>Research</h3>\n<p>We work off assumptions and then spend a considerable amount of time verify these. This means market research and extensive testing with real people.</p>\n</div>\n</div>\n</li>\n</ul>\n</div>\n<div class=\"new-module new-module__type-text new-grid-center \">\n<div class=\"prose\">\n<h2>Expert Development</h2>\n<h4>APPS. SERVERS. CMS.</h4>\n<p>We\'ve been pioneering software development in Singapore since over a decade. We have the experience to delivering robust products and solutions whenever we take on a project.</p>\n<p>In addition to developing holistic software which provides delightful digital experience, each project requires a stable &amp; scalable server backend. We draw on our extensive experience of deploying robust servers &amp; integrating with existing setups to deliver the best.</p>\n</div>\n</div>\n<div class=\"new-module__type-columnsOpen new-grid-right \">\n<ul class=\"columns-grid columns-grid-2 \">\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m1667273167 brand-one fill-bp-green new-module-padded prose\">\n<div class=\"prose\">\n<h3>Smart Systems</h3>\n<p>Our clients usually come to us wanting something which works towards a specific business need and goal. We help them through any challenge may it be&nbsp;<strong>b</strong><strong>usiness intelligence dashboards , workflow automation &amp; analytics</strong>&nbsp;or any other request.</p>\n</div>\n</div>\n</li>\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m1181117081 brand-one fill-bp-green new-module-padded prose\">\n<div class=\"prose\">\n<h3>iOS, Android &amp; Wearables</h3>\n<p>We\'ve been developing apps since 2008. Those who\'ve been paying attention, that\'s when Apple opened the platform for development. Since then we\'ve published over a&nbsp;<strong>100+ apps for phones, tablets and wearables</strong>.</p>\n</div>\n</div>\n</li>\n</ul>\n</div>\n<div class=\"new-module new-module__type-text new-grid-center \">\n<div class=\"prose\">\n<h2>System Integration &amp; Beyond</h2>\n<h4>WEB. IOS. ANDROID.</h4>\n<p>We focus on quality. Only native applications at that &mdash; so that we can be really damn good at it. This includes all the major platforms &amp; also any other quirky systems you might might across. We draw on our extensive experience of deploying robust servers &amp; integrating with existing setups to deliver the best.</p>\n</div>\n</div>\n<div class=\"new-module__type-columnsOpen new-grid-center \">\n<ul class=\"columns-grid columns-grid-2 \">\n<li>\n<div class=\"new-module new-module__type-text \">\n<div class=\"prose\">\n<ul>\n<li>Maintenance &amp; Support</li>\n<li>24x7 monitoring</li>\n</ul>\n</div>\n</div>\n</li>\n<li>\n<div class=\"new-module new-module__type-text \">\n<div class=\"prose\">\n<ul>\n<li>Year-on-year product updates</li>\n<li>Data &amp; analytics review</li>\n</ul>\n</div>\n</div>\n</li>\n</ul>\n</div>', NULL, 1, 1, 1, '2022-01-09 03:21:22', '2022-02-26 05:08:05', NULL);
+(1, 'Trade', '01408979487', '01408979487', '123 Wall Street, New York / NY', NULL, '01408979487', 'demo@gmail.com', NULL, '9CrYBEtEeri1RYbdJpYXecK9vptXt5NZ0ibAUDUm.png', NULL, NULL, NULL, '<div id=\"shopify-section-page-template\" class=\"shopify-section\">\n<div class=\"\">\n<div class=\"page-wrapper \">\n<div class=\"container\">\n<div class=\"row\">\n<div class=\"col-md-12\">\n<div class=\"rte-page \">\n<div id=\"pt-pageContent\" class=\"show_unavailable_variants\">\n<div class=\"container-indent\">\n<div class=\"container\">\n<p>Massive Impacts ensures that your privacy is protected when you use our services. This applies to our website&nbsp;<a href=\"http://www.massive-impacts.com/\">www.massive-impacts.com</a>. We have a comprehensive policy that covers all the perspectives.</p>\n<p>Personal data</p>\n<p>Massive Impacts does not store, sell and share your personal data with any third parties. This includes all your credit/debit card information as well as any personal information. It will never rent or lease out this information to any third parties. &nbsp;</p>\n<p>We take your privacy very seriously. If anything contained in this privacy policy does not agree with you, please discontinue the use of our services at the earliest.</p>\n<p>&nbsp;</p>\n<p><strong>How do we use your data?</strong></p>\n<p>We use your data only to provide you with our services as per your expectation. This includes marketing offers and relevant information. It does not include any other purpose</p>\n<p><a href=\"http://www.massive-impacts.com/\">www.massive-impacts.com</a>&nbsp;will not pass any debit/credit card details to&nbsp;third parties, whatsoever they may be.</p>\n<p>All credit/debit cards&rsquo; details and personally identifiable information will NOT be stored, sold, shared, rented or leased to any third parties.&nbsp;<a href=\"http://www.massive-impacts.com/\">www.massive-impacts.com</a>&nbsp;will not pass any debit/credit card details to&nbsp;third parties</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p><strong>What information do we use?</strong></p>\n<p>We only collect the personal information that YOU share with us. This includes any or all information that you share for the purpose of buying our services, when you participate on activities on our website and contact us. We collect names; email addresses; mailing addresses; billing addresses; contact preferences; and other similar information.</p>\n<p>&lsquo;&rsquo;www.massive-impacts.com takes appropriate steps to ensure data privacy and security including through various hardware and software methodologies. However, (www.massive-impacts.com) cannot guarantee the security of any information that is disclosed online&rsquo;&rsquo;</p>\n<p>Any information you share is based on legal business interests and comes in fulfillment of our contract with you. It is in compliance our legal obligations and goes with your consent.</p>\n<p>&nbsp;</p>\n<p><strong>Additional Points</strong></p>\n<p><a href=\"http://www.massive-impacts.com/\">www.massive-impacts.com</a>&nbsp;is not responsible for the privacy policies of websites to which it links. If you provide any information to such third parties different rules regarding the collection and use of your personal information may apply. You should contact these entities directly if you have any questions about their use of the information that they collect.</p>\n<p>The Website Policies and Terms &amp; Conditions may be changed or updated occasionally to meet the requirements and standards.</p>\n<p>Therefore, the Customers&rsquo; are encouraged to frequently visit these sections to be updated about the changes on the website. Modifications will be effective on the day they are posted&rdquo;.</p>\n</div>\n</div>\n</div>\n<div id=\"shopify-section-footer-template\" class=\"shopify-section\">\n<div id=\"shopify-section-1594730339187\" class=\"shopify-section index-section \">\n<div class=\"container-indent\">\n<div class=\"container\">&nbsp;</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div id=\"shopify-section-newsletter-bar\" class=\"shopify-section\"></div>\n<div id=\"shopify-section-footer\" class=\"shopify-section\">\n<div data-section-id=\"footer\" data-section-type=\"footer-section\"><footer class=\"footer-main-standard\">\n<div class=\"container\">\n<div class=\"row\" data-gutter=\"60\">\n<div class=\"col-sm-4 footer-col\">&nbsp;</div>\n</div>\n</div>\n</footer></div>\n</div>', 'https://www.google.com.bd/maps/place/Shomikaron/@23.746663,90.3945468,17z/data=!3m1!4b1!4m5!3m4!1s0x3755b962165c30f5:0xe304ef627c4831bc!8m2!3d23.7466581!4d90.3967355', '<p>To protect your website, company, and customers, you need to state your terms of use in clear, simple, and easily understood language. Our simple terms and conditions template can instantly generate a custom terms of service policy for your business.</p>\n<p>Once your free terms of service policy is generated, you&rsquo;ll be able to continue customizing and making adjustments until it&rsquo;s perfect. Fill out the simple form below to get started.</p>', '<div class=\"new-module new-module__type-text new-grid-center \">\n<div class=\"prose\">\n<h2>Detailed Design</h2>\n<h4>PENCILS. POST-ITS. WHITEBOARDS.</h4>\n<p>Every project at Buuuk is led by a focus on design. It starts with thorough research and careful attention to detail. The key to delivering a memorable software solution is to present unique &amp; innovative solutions in a likeable and usable interface.We understand this and that is why, the project design lead is present in every client meeting.</p>\n</div>\n</div>\n<div class=\"new-module__type-columnsOpen new-grid-right \">\n<ul class=\"columns-grid columns-grid-3 \">\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m913548515 brand-one fill-bs-purple new-module-padded prose\">\n<div class=\"prose\">\n<h3>User Experience</h3>\n<p><em>Did you know</em>&nbsp;we have our own community of helpers who help us with research and user experience testing?</p>\n</div>\n</div>\n</li>\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m793710779 brand-one fill-bs-purple new-module-padded prose\">\n<div class=\"prose\">\n<h3>User Interface</h3>\n<p>UI design, animation prototyping and icon design is what we\'re really good at. It\'s not the only thing we\'re really good at though.</p>\n</div>\n</div>\n</li>\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m1215838384 brand-one fill-bs-purple new-module-padded prose\">\n<div class=\"prose\">\n<h3>Research</h3>\n<p>We work off assumptions and then spend a considerable amount of time verify these. This means market research and extensive testing with real people.</p>\n</div>\n</div>\n</li>\n</ul>\n</div>\n<div class=\"new-module new-module__type-text new-grid-center \">\n<div class=\"prose\">\n<h2>Expert Development</h2>\n<h4>APPS. SERVERS. CMS.</h4>\n<p>We\'ve been pioneering software development in Singapore since over a decade. We have the experience to delivering robust products and solutions whenever we take on a project.</p>\n<p>In addition to developing holistic software which provides delightful digital experience, each project requires a stable &amp; scalable server backend. We draw on our extensive experience of deploying robust servers &amp; integrating with existing setups to deliver the best.</p>\n</div>\n</div>\n<div class=\"new-module__type-columnsOpen new-grid-right \">\n<ul class=\"columns-grid columns-grid-2 \">\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m1667273167 brand-one fill-bp-green new-module-padded prose\">\n<div class=\"prose\">\n<h3>Smart Systems</h3>\n<p>Our clients usually come to us wanting something which works towards a specific business need and goal. We help them through any challenge may it be&nbsp;<strong>b</strong><strong>usiness intelligence dashboards , workflow automation &amp; analytics</strong>&nbsp;or any other request.</p>\n</div>\n</div>\n</li>\n<li>\n<div class=\"new-module new-module__type-summary fill-brand-module-m1181117081 brand-one fill-bp-green new-module-padded prose\">\n<div class=\"prose\">\n<h3>iOS, Android &amp; Wearables</h3>\n<p>We\'ve been developing apps since 2008. Those who\'ve been paying attention, that\'s when Apple opened the platform for development. Since then we\'ve published over a&nbsp;<strong>100+ apps for phones, tablets and wearables</strong>.</p>\n</div>\n</div>\n</li>\n</ul>\n</div>\n<div class=\"new-module new-module__type-text new-grid-center \">\n<div class=\"prose\">\n<h2>System Integration &amp; Beyond</h2>\n<h4>WEB. IOS. ANDROID.</h4>\n<p>We focus on quality. Only native applications at that &mdash; so that we can be really damn good at it. This includes all the major platforms &amp; also any other quirky systems you might might across. We draw on our extensive experience of deploying robust servers &amp; integrating with existing setups to deliver the best.</p>\n</div>\n</div>\n<div class=\"new-module__type-columnsOpen new-grid-center \">\n<ul class=\"columns-grid columns-grid-2 \">\n<li>\n<div class=\"new-module new-module__type-text \">\n<div class=\"prose\">\n<ul>\n<li>Maintenance &amp; Support</li>\n<li>24x7 monitoring</li>\n</ul>\n</div>\n</div>\n</li>\n<li>\n<div class=\"new-module new-module__type-text \">\n<div class=\"prose\">\n<ul>\n<li>Year-on-year product updates</li>\n<li>Data &amp; analytics review</li>\n</ul>\n</div>\n</div>\n</li>\n</ul>\n</div>', NULL, 1, 1, 1, '2022-01-09 03:21:22', '2022-06-09 23:57:54', NULL);
 
 -- --------------------------------------------------------
 
@@ -1585,28 +1585,28 @@ CREATE TABLE `point_policies` (
 CREATE TABLE `products` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `vendor_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `code` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `code` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `name` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `regular_price` double(20,4) NOT NULL,
-  `special_price` double(20,4) NOT NULL,
-  `wholesale_price` double(20,4) NOT NULL,
-  `purchase_price` double(20,4) NOT NULL DEFAULT 0.0000,
-  `discount` double(20,4) DEFAULT 0.0000,
+  `regular_price` double(20,4) DEFAULT NULL,
+  `special_price` double(20,4) DEFAULT NULL,
+  `wholesale_price` double(20,4) DEFAULT NULL,
+  `purchase_price` double(20,4) DEFAULT NULL,
+  `discount` double(20,4) DEFAULT NULL,
   `sub_sub_category_id` bigint(20) UNSIGNED DEFAULT NULL,
   `sub_category_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `category_id` bigint(20) UNSIGNED NOT NULL,
+  `category_id` bigint(20) UNSIGNED DEFAULT NULL,
   `contact_id` bigint(20) UNSIGNED DEFAULT NULL,
   `brand_id` bigint(20) UNSIGNED DEFAULT NULL,
   `low_alert` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `min_order_qty` double(20,4) DEFAULT NULL,
-  `guarantee` double(20,4) NOT NULL DEFAULT 0.0000,
-  `featured` enum('None','New Product','Trending Product','Best Selling Product','Fresh Fruits','Fresh Vegetables','Meat & Seafood') COLLATE utf8mb4_unicode_ci NOT NULL,
+  `guarantee` double(20,4) DEFAULT NULL,
+  `featured` enum('None','New Product','Trending Product','Best Selling Product','Fresh Fruits','Fresh Vegetables','Meat & Seafood') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `key_word` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `barcode_generate_state` enum('Bulk','Single') COLLATE utf8mb4_unicode_ci NOT NULL,
-  `in_stock` enum('In Stock','Out of Stock') COLLATE utf8mb4_unicode_ci NOT NULL,
+  `barcode_generate_state` enum('Bulk','Single') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `in_stock` enum('In Stock','Out of Stock') COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `vat_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `branch_id` bigint(20) UNSIGNED NOT NULL,
-  `created_by` bigint(20) UNSIGNED NOT NULL,
+  `branch_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `created_by` bigint(20) UNSIGNED DEFAULT NULL,
   `is_active` tinyint(1) DEFAULT 1,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -1619,8 +1619,10 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `vendor_id`, `code`, `name`, `regular_price`, `special_price`, `wholesale_price`, `purchase_price`, `discount`, `sub_sub_category_id`, `sub_category_id`, `category_id`, `contact_id`, `brand_id`, `low_alert`, `min_order_qty`, `guarantee`, `featured`, `key_word`, `barcode_generate_state`, `in_stock`, `vat_id`, `branch_id`, `created_by`, `is_active`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, NULL, 'P646800988', 'Vegetable', 120.0000, 100.0000, 0.0000, 0.0000, 16.6667, NULL, 6, 4, NULL, 2, NULL, 1.0000, 0.0000, 'Fresh Fruits', NULL, 'Bulk', 'In Stock', NULL, 1, 1, 1, '2022-03-08 22:45:13', '2022-03-08 22:45:13', NULL),
-(3, NULL, 'P646801417', 'patchouli', 700.0000, 600.0000, 0.0000, 0.0000, 14.2857, NULL, 1, 5, NULL, 4, NULL, 1.0000, 0.0000, 'Meat & Seafood', '<span class=\"ILfuVd\"><span class=\"hgKElc\">any plant whose fruit, seeds, roots, tubers, bulbs, stems, leaves, or flower parts are used as food, as the <strong>tomato, bean, beet, potato, onion, asparagus, spinach, or cauliflower</strong>. the edible part of such a plant, as the tuber of the potato. any member of the plant kingdom; plant.</span></span>', 'Bulk', 'In Stock', NULL, 1, 1, 1, '2022-03-08 22:53:08', '2022-03-08 22:53:08', NULL),
-(4, NULL, 'P646801840', 'FRUITS AND VEGGIES', 90.0000, 82.0000, 0.0000, 0.0000, 8.8889, NULL, 4, 3, NULL, 2, NULL, 1.0000, 0.0000, 'Fresh Vegetables', NULL, 'Bulk', 'In Stock', NULL, 1, 1, 1, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL);
+(3, NULL, 'P646801417', 'patchouli', 700.0000, 600.0000, 0.0000, 0.0000, 14.2857, NULL, 1, 5, NULL, 4, NULL, 1.0000, 0.0000, 'Meat & Seafood', '<span class=\"ILfuVd\"><span class=\"hgKElc\">any plant whose fruit, seeds, roots, tubers, bulbs, stems, leaves, or flower parts are used as food, as the <strong>tomato, bean, beet, potato, onion, asparagus, spinach, or cauliflower</strong>. the edible part of such a plant, as the tuber of the potato. any member of the plant kingdom; plant.</span></span>', 'Bulk', 'In Stock', NULL, 1, 1, 1, '2022-03-08 22:53:08', '2022-06-10 01:06:15', NULL),
+(4, NULL, 'P646801840', 'FRUITS AND VEGGIES', 90.0000, 82.0000, 0.0000, 0.0000, 8.8889, NULL, 4, 3, NULL, 2, NULL, 1.0000, 0.0000, 'Fresh Vegetables', NULL, 'Bulk', 'In Stock', NULL, 1, 1, 1, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL),
+(5, NULL, NULL, 'Chittagong', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Fresh Vegetables', NULL, NULL, 'In Stock', NULL, 1, 1, 1, '2022-09-18 11:10:30', '2022-09-18 11:10:30', NULL),
+(6, NULL, NULL, 'ghjghgf', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Fresh Vegetables', NULL, NULL, 'In Stock', NULL, 1, 1, 1, '2022-09-18 11:28:04', '2022-09-18 11:28:04', NULL);
 
 -- --------------------------------------------------------
 
@@ -1639,6 +1641,24 @@ CREATE TABLE `product_barcodes` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_features`
+--
+
+CREATE TABLE `product_features` (
+  `id` int(11) NOT NULL,
+  `code` int(11) NOT NULL,
+  `name` int(11) NOT NULL,
+  `position` int(11) NOT NULL,
+  `is_active` int(11) NOT NULL,
+  `branch_id` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  `deleted_at` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -1669,16 +1689,18 @@ INSERT INTO `product_images` (`id`, `product_id`, `image`, `position`, `created_
 (2, 1, 'krn99WAEF41xasv53OsSm9wA88PHdAvQAFpVKKya.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:45:13', '2022-03-08 22:45:13', NULL),
 (3, 1, '1SleCnLLFDXlcxcirMDCXTrQaZESZ0kKqG815xSk.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:45:13', '2022-03-08 22:45:13', NULL),
 (4, 1, 'SJx8cUKzSRr5buLgTwzbMUrracEKK5cHrRtVmCUQ.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:45:13', '2022-03-08 22:45:13', NULL),
-(10, 3, 'KIHPZVTSHPvcmiFgbJi73oV70LRpcgpwuyCX8ltu.jpg', NULL, 1, 1, 1, 1, '2022-03-08 22:53:08', '2022-03-08 22:53:08', NULL),
-(11, 3, '1wRJCjIkDE12oz5dvAG6nwO4BehycJypm9zjmoCY.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:53:08', '2022-03-08 22:53:08', NULL),
-(12, 3, 'GafViiaj3G4RZuu8al7xsa2l8perHuTKUdhkqiED.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:53:08', '2022-03-08 22:53:08', NULL),
-(13, 3, '8tb1r0Xm5kqgvcLl1ZypaHV6210nHOOyVqHCeAve.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:53:08', '2022-03-08 22:53:08', NULL),
-(14, 3, 'x56lIKoKSn13FRyRtdAPSY8TQd6uUDYYAuYoJUhD.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:53:08', '2022-03-08 22:53:08', NULL),
+(10, 3, 'KIHPZVTSHPvcmiFgbJi73oV70LRpcgpwuyCX8ltu.jpg', NULL, 1, 1, 1, 1, '2022-03-08 22:53:08', '2022-06-10 01:06:15', '2022-06-10 01:06:15'),
+(11, 3, '1wRJCjIkDE12oz5dvAG6nwO4BehycJypm9zjmoCY.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:53:08', '2022-06-10 01:06:15', '2022-06-10 01:06:15'),
+(12, 3, 'GafViiaj3G4RZuu8al7xsa2l8perHuTKUdhkqiED.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:53:08', '2022-06-10 01:06:15', '2022-06-10 01:06:15'),
+(13, 3, '8tb1r0Xm5kqgvcLl1ZypaHV6210nHOOyVqHCeAve.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:53:08', '2022-06-10 01:06:15', '2022-06-10 01:06:15'),
+(14, 3, 'x56lIKoKSn13FRyRtdAPSY8TQd6uUDYYAuYoJUhD.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:53:08', '2022-06-10 01:06:15', '2022-06-10 01:06:15'),
 (15, 4, 'XOfar7GsIOM7vXy95OnajPUMH3fJsCRUI0BqWUyZ.jpg', NULL, 1, 1, 1, 1, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL),
 (16, 4, 'Z37p0UDBEK1EqipG32pyz3O1UA3hRJ7Ou3XkGt6M.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL),
 (17, 4, '9aRVw8dhnnUIBb7pDC0hVezrwvew0JNRWHs8gyXS.webp', NULL, 1, 1, 1, 0, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL),
 (18, 4, 'DTNT6xXPGZ8rW14OlRXRqxbV633lnzztU40Jr5lr.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL),
-(19, 4, '0WRaf0zsJAE06Pg7DkOoVidWgfhzc0HjH6bKkXU0.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL);
+(19, 4, '0WRaf0zsJAE06Pg7DkOoVidWgfhzc0HjH6bKkXU0.jpg', NULL, 1, 1, 1, 0, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL),
+(20, 5, 'RgDl6mT257LMNibVBf6yat3mtaXRchSCd1YniMHE.jpg', NULL, 1, 1, 1, 1, '2022-09-18 11:10:31', '2022-09-18 11:10:31', NULL),
+(21, 6, '7BDzOWx1BAUmxi3rB1m6IzGuzGh2GVsOO4ec5iT8.jpg', NULL, 1, 1, 1, 1, '2022-09-18 11:28:05', '2022-09-18 11:28:05', NULL);
 
 -- --------------------------------------------------------
 
@@ -1695,9 +1717,9 @@ CREATE TABLE `product_infos` (
   `meta_title` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `meta_description` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `meta_keyword` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `branch_id` bigint(20) UNSIGNED NOT NULL,
-  `created_by` bigint(20) UNSIGNED NOT NULL,
-  `is_active` tinyint(1) DEFAULT 1,
+  `branch_id` bigint(20) UNSIGNED DEFAULT NULL,
+  `created_by` bigint(20) UNSIGNED DEFAULT NULL,
+  `is_active` tinyint(1) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
@@ -1709,8 +1731,10 @@ CREATE TABLE `product_infos` (
 
 INSERT INTO `product_infos` (`id`, `product_id`, `short_description`, `long_description`, `youtube_link`, `meta_title`, `meta_description`, `meta_keyword`, `branch_id`, `created_by`, `is_active`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 1, '<ul class=\"i8Z77e\">\n<li class=\"TrT0Xe\">Leafy green &ndash; lettuce, spinach and silverbeet.</li>\n<li class=\"TrT0Xe\">Cruciferous &ndash; cabbage, cauliflower, Brussels sprouts and broccoli.</li>\n<li class=\"TrT0Xe\">Marrow &ndash; pumpkin, cucumber and zucchini.</li>\n<li class=\"TrT0Xe\">Root &ndash; potato, sweet potato and yam.</li>\n<li class=\"TrT0Xe\">Edible plant stem &ndash; celery and asparagus.</li>\n<li class=\"TrT0Xe\">Allium &ndash; onion, garlic and shallot.</li>\n</ul>', '<span class=\"ILfuVd\"><span class=\"hgKElc\">The root vegetables include <strong>beets, carrots, radishes, sweet potatoes, and turnips</strong>. Stem vegetables include asparagus and kohlrabi. Among the edible tubers, or underground stems, are potatoes. The leaf and leafstalk vegetables include brussels sprouts, cabbage, celery, lettuce, rhubarb, and spinach.</span></span>', NULL, NULL, NULL, NULL, 1, 1, 1, '2022-03-08 22:45:13', '2022-03-08 22:45:13', NULL),
-(3, 3, '<ol class=\"X5LH0c\">\n<li class=\"TrT0Xe\">Spinach. Share on Pinterest Andersen Ross/Getty Images. ...</li>\n<li class=\"TrT0Xe\">Kale. Kale is a very popular leafy green vegetable with several health benefits. ...</li>\n<li class=\"TrT0Xe\">Broccoli. ...</li>\n<li class=\"TrT0Xe\">Peas. ...</li>\n<li class=\"TrT0Xe\">Sweet potatoes. ...</li>\n<li class=\"TrT0Xe\">Beets. ...</li>\n<li class=\"TrT0Xe\">Carrots. ...</li>\n<li class=\"TrT0Xe\">Fermented vegetables.</li>\n</ol>', NULL, NULL, NULL, NULL, NULL, 1, 1, 1, '2022-03-08 22:53:08', '2022-03-08 22:53:08', NULL),
-(4, 4, '<div class=\"wWOJcd\" tabindex=\"0\" role=\"button\" aria-controls=\"exacc_xDMoYvXeJYKTseMP2YWOmAw8\" aria-expanded=\"true\" aria-labelledby=\"exacc_xDMoYvXeJYKTseMP2YWOmAw7\">\n<div id=\"exacc_xDMoYvXeJYKTseMP2YWOmAw7\" class=\"iDjcJe IX9Lgd wwB5gf\" style=\"transform: translate3d(0px, 0px, 0px);\">What are vegetables and examples?</div>\n<div class=\"YsGUOb\" style=\"transform: rotateZ(-180deg);\">&nbsp;</div>\n<div class=\"r21Kzd\" style=\"visibility: hidden;\" data-hveid=\"CB0QAQ\" data-ved=\"2ahUKEwj10Kv_nrj2AhWCSWwGHdmCA8MQuk56BAgdEAE\">&nbsp;</div>\n</div>\n<div id=\"exacc_xDMoYvXeJYKTseMP2YWOmAw8\" class=\"MBtdbb\" style=\"display: block;\" data-ved=\"2ahUKEwj10Kv_nrj2AhWCSWwGHdmCA8MQ7NUEegQIHRAD\">\n<div class=\"ymu2Hb\">\n<div id=\"_xDMoYvXeJYKTseMP2YWOmAw28\" class=\"t0bRye r2fjmd\" style=\"opacity: 1;\" data-hveid=\"CB0QBA\" data-ved=\"2ahUKEwj10Kv_nrj2AhWCSWwGHdmCA8MQu04oAHoECB0QBA\">\n<div id=\"WEB_ANSWERS_RESULT_16_xDMoYvXeJYKTseMP2YWOmAw__14\">\n<div class=\"wDYxhc\" style=\"clear: none;\" data-md=\"61\">\n<div class=\"LGOjhe\" role=\"heading\" data-attrid=\"wa:/description\" aria-level=\"3\" data-hveid=\"CBwQAA\"><span class=\"ILfuVd\"><span class=\"hgKElc\">any plant whose fruit, seeds, roots, tubers, bulbs, stems, leaves, or flower parts are used as food, as the <strong>tomato, bean, beet, potato, onion, asparagus, spinach, or cauliflower</strong>. the edible part of such a plant, as the tuber of the potato. any member of the plant kingdom; plant.</span></span></div>\n</div>\n</div>\n</div>\n</div>\n</div>', '<span class=\"ILfuVd\"><span class=\"hgKElc\">The root vegetables include <strong>beets, carrots, radishes, sweet potatoes, and turnips</strong>. Stem vegetables include asparagus and kohlrabi. Among the edible tubers, or underground stems, are potatoes. The leaf and leafstalk vegetables include brussels sprouts, cabbage, celery, lettuce, rhubarb, and spinach.</span></span>', NULL, NULL, NULL, NULL, 1, 1, 1, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL);
+(3, 3, '<ol class=\"X5LH0c\">\n<li class=\"TrT0Xe\">Spinach. Share on Pinterest Andersen Ross/Getty Images. ...</li>\n<li class=\"TrT0Xe\">Kale. Kale is a very popular leafy green vegetable with several health benefits. ...</li>\n<li class=\"TrT0Xe\">Broccoli. ...</li>\n<li class=\"TrT0Xe\">Peas. ...</li>\n<li class=\"TrT0Xe\">Sweet potatoes. ...</li>\n<li class=\"TrT0Xe\">Beets. ...</li>\n<li class=\"TrT0Xe\">Carrots. ...</li>\n<li class=\"TrT0Xe\">Fermented vegetables.</li>\n</ol>', NULL, NULL, NULL, NULL, NULL, 1, 1, 1, '2022-03-08 22:53:08', '2022-06-10 01:06:15', '2022-06-10 01:06:15'),
+(4, 4, '<div class=\"wWOJcd\" tabindex=\"0\" role=\"button\" aria-controls=\"exacc_xDMoYvXeJYKTseMP2YWOmAw8\" aria-expanded=\"true\" aria-labelledby=\"exacc_xDMoYvXeJYKTseMP2YWOmAw7\">\n<div id=\"exacc_xDMoYvXeJYKTseMP2YWOmAw7\" class=\"iDjcJe IX9Lgd wwB5gf\" style=\"transform: translate3d(0px, 0px, 0px);\">What are vegetables and examples?</div>\n<div class=\"YsGUOb\" style=\"transform: rotateZ(-180deg);\">&nbsp;</div>\n<div class=\"r21Kzd\" style=\"visibility: hidden;\" data-hveid=\"CB0QAQ\" data-ved=\"2ahUKEwj10Kv_nrj2AhWCSWwGHdmCA8MQuk56BAgdEAE\">&nbsp;</div>\n</div>\n<div id=\"exacc_xDMoYvXeJYKTseMP2YWOmAw8\" class=\"MBtdbb\" style=\"display: block;\" data-ved=\"2ahUKEwj10Kv_nrj2AhWCSWwGHdmCA8MQ7NUEegQIHRAD\">\n<div class=\"ymu2Hb\">\n<div id=\"_xDMoYvXeJYKTseMP2YWOmAw28\" class=\"t0bRye r2fjmd\" style=\"opacity: 1;\" data-hveid=\"CB0QBA\" data-ved=\"2ahUKEwj10Kv_nrj2AhWCSWwGHdmCA8MQu04oAHoECB0QBA\">\n<div id=\"WEB_ANSWERS_RESULT_16_xDMoYvXeJYKTseMP2YWOmAw__14\">\n<div class=\"wDYxhc\" style=\"clear: none;\" data-md=\"61\">\n<div class=\"LGOjhe\" role=\"heading\" data-attrid=\"wa:/description\" aria-level=\"3\" data-hveid=\"CBwQAA\"><span class=\"ILfuVd\"><span class=\"hgKElc\">any plant whose fruit, seeds, roots, tubers, bulbs, stems, leaves, or flower parts are used as food, as the <strong>tomato, bean, beet, potato, onion, asparagus, spinach, or cauliflower</strong>. the edible part of such a plant, as the tuber of the potato. any member of the plant kingdom; plant.</span></span></div>\n</div>\n</div>\n</div>\n</div>\n</div>', '<span class=\"ILfuVd\"><span class=\"hgKElc\">The root vegetables include <strong>beets, carrots, radishes, sweet potatoes, and turnips</strong>. Stem vegetables include asparagus and kohlrabi. Among the edible tubers, or underground stems, are potatoes. The leaf and leafstalk vegetables include brussels sprouts, cabbage, celery, lettuce, rhubarb, and spinach.</span></span>', NULL, NULL, NULL, NULL, 1, 1, 1, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL),
+(5, 5, 'nmmm', 'nmnn', NULL, NULL, NULL, NULL, 1, 1, NULL, '2022-09-18 11:10:31', '2022-09-18 11:10:31', NULL),
+(6, 6, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, NULL, '2022-09-18 11:28:05', '2022-09-18 11:28:05', NULL);
 
 -- --------------------------------------------------------
 
@@ -1759,7 +1783,7 @@ CREATE TABLE `profile_settings` (
 --
 
 INSERT INTO `profile_settings` (`id`, `profile_photo`, `business_name`, `email`, `name`, `address`, `mobile`, `postal_code`, `city`, `country`, `company_id`, `branch_id`, `is_active`, `deleted_at`, `created_at`, `updated_at`) VALUES
-(1, '9Q0mBIZcgY89iVyheKDJs8yBUqJGBmlPwTLwpbsY.png', 'Amin Tradersohan Ecommerce', 'demo@gmail.com', 'Md. Iqbal Hossain', 'MMalibagh, Dhaka', NULL, '12345', 'Dhaka', 'Bangladesh', 1, 1, 1, NULL, '2022-01-09 03:20:16', '2022-02-26 03:09:16');
+(1, '9Q0mBIZcgY89iVyheKDJs8yBUqJGBmlPwTLwpbsY.png', 'Trade', 'demo@gmail.com', 'Md. Iqbal Hossain', 'MMalibagh, Dhaka', NULL, '12345', 'Dhaka', 'Bangladesh', 1, 1, 1, NULL, '2022-01-09 03:20:16', '2022-06-09 23:55:32');
 
 -- --------------------------------------------------------
 
@@ -2068,8 +2092,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('9RoDipkCvcRiH9zaSxHdKVM17N8I9j4ilNNvbBT2', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiQUl2aG9UeUJVbHk0NzBpWHYxdEhzYklLcG4zY1ZyaUNYM2szRE9pcSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wcm9kdWN0LWRldGFpbHMvNCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTAkUzdiQjREcDNIMlIuQlJ1UEZ6NmYyZUJMMnQ1aEtNNHJUZGF2aExDRUFNeFJFZVBCYldPclMiO30=', 1646803143),
-('FsmdqCfzKEzJaSZYqAp92f0CZMcfBsP2dguIYmnw', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiVnhKb2FnTmE2dVBteUlPM1lmajFrUzRrbjFoRm9HUUdXOU5OTFN4TCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wcm9kdWN0LWRldGFpbHMvNCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTAkUzdiQjREcDNIMlIuQlJ1UEZ6NmYyZUJMMnQ1aEtNNHJUZGF2aExDRUFNeFJFZVBCYldPclMiO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJFM3YkI0RHAzSDJSLkJSdVBGejZmMmVCTDJ0NWhLTTRyVGRhdmhMQ0VBTXhSRWVQQmJXT3JTIjt9', 1646801991);
+('IRWxYByhnibjV1vaSEKJPcWnRvS2xTO706prqCkL', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMElpc2ZXdGQyelo0N3NBTjY1aDJZcnVaRzcxcnBaSUtDN1JHbWRKcSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1663510546),
+('YhELZxA6P7a56l8E7W52Kwv9IrfZHBKHf6otW8X5', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiR1RhbjNsUnJnR0pEdmhlMTRDWWFTME1oUzNpNEFud0JhVVRmcWxKTyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mzk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wcm9kdWN0LWRldGFpbHMvMyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTAkUzdiQjREcDNIMlIuQlJ1UEZ6NmYyZUJMMnQ1aEtNNHJUZGF2aExDRUFNeFJFZVBCYldPclMiO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJFM3YkI0RHAzSDJSLkJSdVBGejZmMmVCTDJ0NWhLTTRyVGRhdmhMQ0VBTXhSRWVQQmJXT3JTIjt9', 1663524789);
 
 -- --------------------------------------------------------
 
@@ -2136,11 +2160,11 @@ CREATE TABLE `sliders` (
 --
 
 INSERT INTO `sliders` (`id`, `title`, `image`, `description`, `position`, `branch_id`, `created_by`, `is_active`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, NULL, 'mPakJo5E23dgJLrOEe2ARuJdlAxt1rhsrHzx4YdL.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 01:00:59', '2022-03-01 04:39:13', NULL),
-(2, NULL, 'YcrM9Xi4IqpuclJvTFX9ZRylRjPy1HQqyiAFiXW2.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 01:01:11', '2022-03-01 04:38:53', NULL),
-(3, NULL, 'xDPqBrHM2aiqOcvIbsOUa3Myop5stiq5XjufRRvo.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 01:01:29', '2022-03-01 04:38:39', NULL),
-(4, NULL, 'RiUzKadOEiSRgv9KTcVc1FL98d4K3E8MZIXetLH3.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 01:28:34', '2022-03-01 04:38:26', NULL),
-(5, NULL, 'ANIYMXlBlU0F60QQ4cXacTo7OjlLxP3SdSQxw8a2.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 02:41:04', '2022-03-01 04:38:05', NULL);
+(1, NULL, 'mPakJo5E23dgJLrOEe2ARuJdlAxt1rhsrHzx4YdL.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 01:00:59', '2022-06-09 23:58:28', '2022-06-09 23:58:28'),
+(2, NULL, 'YcrM9Xi4IqpuclJvTFX9ZRylRjPy1HQqyiAFiXW2.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 01:01:11', '2022-06-09 23:58:35', '2022-06-09 23:58:35'),
+(3, NULL, '8jA4xKuqYOZLTeBSL8IgWiUFLmgqEbVloPWdhbSX.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 01:01:29', '2022-09-18 09:04:47', NULL),
+(4, NULL, 'Cs6n1TFjbzt10fQrSP01eMNvs0Xl9dktL3O6HdKE.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 01:28:34', '2022-09-18 09:04:24', NULL),
+(5, NULL, 'HPJU4CkQsCbO3ea1JGClzkH1ntOU4inS9FX0Uv5V.jpg', NULL, NULL, 1, 1, 1, '2022-02-13 02:41:04', '2022-09-18 09:00:56', NULL);
 
 -- --------------------------------------------------------
 
@@ -2228,7 +2252,9 @@ INSERT INTO `stock_managers` (`id`, `date`, `product_id`, `quantity`, `price`, `
 (25, '2022-03-08 03:33:35', 33, NULL, NULL, NULL, NULL, NULL, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 3, 1, 1, 1, '2022-03-08 03:33:35', '2022-03-08 03:33:35', NULL),
 (26, '2022-03-08 22:45:13', 1, NULL, NULL, NULL, NULL, NULL, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 3, 1, 1, 1, '2022-03-08 22:45:13', '2022-03-08 22:45:13', NULL),
 (27, '2022-03-08 22:53:08', 3, NULL, NULL, NULL, NULL, NULL, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 3, 1, 1, 1, '2022-03-08 22:53:08', '2022-03-08 22:53:08', NULL),
-(28, '2022-03-08 22:59:17', 4, NULL, NULL, NULL, NULL, NULL, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 3, 1, 1, 1, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL);
+(28, '2022-03-08 22:59:17', 4, NULL, NULL, NULL, NULL, NULL, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 3, 1, 1, 1, '2022-03-08 22:59:17', '2022-03-08 22:59:17', NULL),
+(29, '2022-09-18 11:10:34', 5, NULL, NULL, NULL, NULL, NULL, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 1, 1, 1, 1, '2022-09-18 11:10:34', '2022-09-18 11:10:34', NULL),
+(30, '2022-09-18 11:28:06', 6, NULL, NULL, NULL, NULL, NULL, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 0.0000, 1, 1, 1, 1, '2022-09-18 11:28:06', '2022-09-18 11:28:06', NULL);
 
 -- --------------------------------------------------------
 
@@ -3092,7 +3118,7 @@ ALTER TABLE `point_policies`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `product_barcodes`
@@ -3104,13 +3130,13 @@ ALTER TABLE `product_barcodes`
 -- AUTO_INCREMENT for table `product_images`
 --
 ALTER TABLE `product_images`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `product_infos`
 --
 ALTER TABLE `product_infos`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `product_wish_lists`
@@ -3194,7 +3220,7 @@ ALTER TABLE `stock_adjustments`
 -- AUTO_INCREMENT for table `stock_managers`
 --
 ALTER TABLE `stock_managers`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `sub_categories`

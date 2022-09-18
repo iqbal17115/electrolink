@@ -17,11 +17,7 @@
         <div class="row m-0">
             <!-- <div class="sidebar-overlay"></div> -->
 
-            {{-- Start Aside --}}
-            @include('ecommerce.aside')
-            {{-- End Aside --}}
-
-            <div class="col-lg-9">
+            <div class="col-lg-12">
                 <div class="main-content">
                     <nav aria-label="breadcrumb" class="breadcrumb-nav font2">
                         <ol class="breadcrumb">
@@ -165,75 +161,17 @@
 
                                 <ul class="single-info-list font2">
                                     <li>
-                                        CATEGORIES:
-                                        <strong>
-                                            <a href="{{ route('search-category-wise',['id'=>$productDetails->Category->id]) }}" class="product-category">
-                                                {{$productDetails->Category->name}}
-                                            </a>
-                                        </strong>
+                                    
                                     </li>
                                 </ul>
 
-                                <div class="product-action">
-                                    <div class="product-single-qty product-quantity" data-product-id="{{ $productDetails->id }}">
-                                        @php
-                                            $productQuantity = isset($cardBadge['data']['products'][$productDetails->id]['quantity']) ? $cardBadge['data']['products'][$productDetails->id]['quantity'] : 0;
-                                        @endphp
-                                        {{-- <input
-                                        class="horizontal-quantity form-control product_quantity"
-                                        id="product_quantity_{{ $productDetails->id }}"
-                                        data-minimum-quantity="{{ $productDetails->min_order_qty }}"
-                                        value="{{ $productQuantity ? $productQuantity : $productDetails->min_order_qty }}"
-                                        type="text"> --}}
-                                        <div class="cart-plus float-right">
-                                            <div class="cart-plus-minus" data-product-id="{{ $productDetails->id }}"
-                                                data-device="desktop">
-                                                {{-- <button class="dec qtybutton"
-                                                    data-product-id="{{ $productDetails->id }}">-</button> --}}
-                                                <input type="text" class="horizontal-quantity form-control product_quantity product-quantity-cart"
-                                                    id="product_quantity_{{ $productDetails->id }}"
-                                                        data-minimum-quantity="{{ $productDetails->min_order_qty }}"
-                                                        value="{{ $productQuantity ? $productQuantity : $productDetails->min_order_qty }}">
-                                                {{-- <button class="inc qtybutton" data-product-id="{{ $productDetails->id }}">+</button> --}}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End .product-single-qty -->
-
-                                    <a
-                                    href="javascript:void(0);"
-                                    class="btn btn-dark add-cart add-to-card buy-now buy-now-button mr-2"
-                                    data-product-id="{{ $productDetails->id }}"
-                                    title="Add to Cart">
-                                        Add to Cart
-                                    </a>
-
-                                </div>
-                                <!-- End .product-action -->
-
-                                <hr class="divider mb-0 mt-0">
+                           
 
                                 <div class="product-single-share icon-with-color mb-2 mt-2">
-                                    <label class="sr-only">Share:</label>
+                                    <label class="sr-only"></label>
 
                                     <div class="social-icons">
-                                        <a href="#" class="social-icon social-facebook" target="_blank"
-                                            title="Facebook">
-                                            <i class="icon-facebook"></i>
-                                        </a>
-                                        <a href="#" class="social-icon social-twitter" target="_blank" title="Twitter">
-                                            <i class="icon-twitter"></i>
-                                        </a>
-                                        <a href="#" class="social-icon social-linkedin" target="_blank"
-                                            title="Linkedin">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                        <a href="#" class="social-icon social-gplus" target="_blank" title="Google +">
-                                            <i class="fab fa-google-plus-g"></i>
-                                        </a>
-                                        <a href="#" class="social-icon social-mail" target="_blank" title="Email">
-                                            <i class="icon-mail-alt"></i>
-                                        </a>
+
                                     </div>
                                     <!-- End .social-icons -->
                                 </div>
@@ -258,9 +196,12 @@
                             <div class="tab-pane fade show active" id="product-desc-content" role="tabpanel"
                                 aria-labelledby="product-tab-desc">
                                 <div class="product-desc-content">
+                                    @if(isset($productDetails->ProductInfo->short_description))
                                     <p>{!! $productDetails->ProductInfo->short_description !!}</p>
+                                    @endif
+                                    @if(isset($productDetails->ProductInfo->long_description))
                                     <p>{!! $productDetails->ProductInfo->long_description !!}</p>
-                                    <p>{!! $productDetails->ProductInfo->meta_description !!}</p>
+                                    @endif
                                 </div>
                                 <!-- End .product-desc-content -->
                             </div>
@@ -270,103 +211,6 @@
                         <!-- End .tab-content -->
                     </div>
                     <!-- End .product-single-tabs -->
-
-                    <div class="products-section pt-0">
-                        <h2 class="section-title pb-3">Related Products</h2>
-
-                        <div class="products-slider owl-carousel owl-theme dots-top dots-small" data-owl-options="{
-                            'dots': true,
-                            'loop': false,
-                            'responsive': {
-                                '0': {
-                                    'items': 3
-                                },
-                                '576': {
-                                    'items': 3
-                                },
-                                '768': {
-                                    'items': 4
-                                },
-                                '992': {
-                                    'items': 4
-                                },
-                                '1500': {
-                                    'items': 6
-                                }
-                            }
-                        }">
-                            @foreach ($data['products'] as $product)
-                            <div class="product-default inner-quickview inner-icon">
-                                <figure>
-                                    <a href="{{route('product-details',['id'=>$product['id']])}}">
-                                        <img @if($product['product_image_first'])
-                                            src="{{ asset('storage/photo/'.$product['product_image_first']['image']) }}"
-                                            @else src="{{ asset('image-not-available.jpg')}}" @endif
-                                            width="205"
-                                            height="205"
-                                            id="ProductImage"
-                                            alt="product">
-                                    </a>
-
-                                    <div class="btn-icon-group">
-                                        <a href="#" class="btn-icon btn-add-cart product-type-simple"><i
-                                                class="icon-shopping-cart"></i></a>
-                                    </div>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="category-wrap">
-                                        <div class="category-list">
-                                            <a href="demo40-shop.html" class="product-category">category</a>
-                                        </div>
-                                    </div>
-                                    <h3 class="product-title">
-                                        <a href="demo40-product.html">
-                                            @if(strlen($product['name'])>50)
-                                            {{\Illuminate\Support\Str::limit($product['name'], 50).'...'}}
-                                            @else
-                                            {{ $product['name'] }}
-                                            @endif
-                                        </a>
-                                    </h3>
-
-                                    <div class="price-box">
-                                        @if($product['special_price'])
-                                        <span class="old-price">
-                                            @if (isset($currencySymbol->symbol))
-                                            <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                            @endif
-                                            {{ $product['regular_price'] }}
-                                        </span>
-                                        <span class="product-price">
-                                            @if (isset($currencySymbol->symbol))
-                                            <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                            @endif
-                                            {{ $product['special_price'] }}
-                                        </span>
-                                        @else
-                                        <span class="product-price">
-                                            @if (isset($currencySymbol->symbol))
-                                            <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                            @endif
-                                            {{ $product['regular_price'] }}
-                                        </span>
-                                        @endif
-                                    </div>
-                                    <!-- End .price-box -->
-                                </div>
-                                <div class="product-action mt-1">
-                                    <a href="javascript:void(0);" class="btn-icon btn-add-cart product-type-simple product-type-simple-mobile add-to-card buy-now buy-now-button" data-product-id="{{ $product['id'] }}" style="background-color: #346aff; color: white; font-weight: bold;">
-                                           <i class="icon-shopping-cart"></i><span>ADD TO CART</span>
-                                    </a>
-                                </div>
-                                <!-- End .product-details -->
-                            </div>
-                            @endforeach
-
-                        </div>
-                        <!-- End .products-slider -->
-                    </div>
-                    <!-- End .products-section -->
 
                     <br>
                     <br>

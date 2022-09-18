@@ -258,12 +258,12 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         $data['html'] = view('frontend.header-card-popup')->render();
-        $data['products'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereIsActive(1)->limit(10)->get()->toArray();
+        $data['products'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereIsActive(1)->get()->toArray();
 
         $featues = ProductFeature::orderBy('position', 'ASC')->get();
         foreach($featues as $feature){
             $featured = str_replace(' ', '_', $feature->name);
-            $data[$featured] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereProductFeatureId($feature->id)->whereIsActive(1)->limit(24)->orderBy('id', 'desc')->get()->toArray();
+            $data[$featured] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereProductFeatureId($feature->id)->whereIsActive(1)->orderBy('id', 'desc')->get()->toArray();
         }
         // $data['products_desc'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereFeatured('New Product')->whereIsActive(1)->limit(24)->orderBy('id', 'desc')->get()->toArray();
         // $data['best_sellings'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereFeatured('Best Selling Product')->whereIsActive(1)->limit(24)->orderBy('id', 'desc')->get()->toArray();
@@ -273,7 +273,7 @@ class HomeController extends Controller
         $topFourCategories = Category::take(4)->get();
         $topCategories = Category::skip(4)->take(200)->get();
         $sliderImages = Slider::orderBy('position')->whereIsActive(1)->get();
-        $sliderImageDesc = Slider::orderBy('id', 'desc')->whereIsActive(1)->limit(2)->get();
+        $sliderImageDesc = Slider::orderBy('id', 'desc')->whereIsActive(1)->get();
         return view('ecommerce.home', [
             'data' => $data,
             'topFourCategories' => $topFourCategories,
@@ -375,7 +375,7 @@ class HomeController extends Controller
     }
 
     public function FeatureWise($feature){
-        $data['products'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereFeatured($feature)->whereIsActive(1)->paginate(20);
+        $data['products'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereIsActive(1)->paginate(20);
         $brands = Brand::get();
 
         return view('ecommerce.shop', [

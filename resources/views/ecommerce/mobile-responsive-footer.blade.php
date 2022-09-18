@@ -18,28 +18,14 @@
                 {{-- <li>
                     <a href="{{ route('search-category-wise') }}">Categories</a>
                     <ul>
-                        @foreach ($categories as $category)
-                        <li><a href="{{ route('search-category-wise',['id'=>$category->id]) }}">{{$category->name}}</a></li>
-                        @endforeach
+                      
                     </ul>
                 </li> --}}
                 {{-- Start Category --}}
                 <li>
                     <a href="{{ route('search-category-wise') }}">Categories</a>
                     <ul>
-                        @foreach ($categories as $category)
-                        <li>
-
-                            <a href="{{ route('search-category-wise',['id'=>$category->id]) }}" class="nolink">
-                            {{$category->name}}
-                            </a>
-                            <ul>
-                                @foreach ($category->SubCategory as $subCategory)
-                                <li><a href="{{ route('search-subCategory-wise', ['id' => $subCategory->id]) }}">{{ $subCategory->name }}</a></li>
-                                @endforeach
-                            </ul>
-                        </li>
-                        @endforeach
+                      
                     </ul>
                 </li>
                 {{-- End Category --}}
