@@ -4,7 +4,7 @@
             <div class="header-left top-notice d-none d-md-flex p-0 font2">
                 <h5 class="d-inline-block text-dark mb-0 ls-0">
                     @if ($companyInfo)
-                        {{ $companyInfo->name }}
+                    {{ $companyInfo->name }}
                     @endif
                 </h5>
                 <a href="{{ route('home') }}" class="category text-white ls-0">START SHARING</a>
@@ -96,87 +96,28 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <a href="{{ route('home') }}" class="logo">
-                    <img src="@if ($companyInfo) {{ asset('storage/photo/' . $companyInfo->logo) }} @endif"
-                        class="w-100" width="111" height="44" alt="Porto Logo" style="height: 40px; margin-right: 6px;">
+                    <img src="@if ($companyInfo) {{ asset('storage/photo/' . $companyInfo->logo) }} @endif" class="w-100" width="111" height="44" alt="Porto Logo" style="height: 40px; margin-right: 6px;">
                 </a>
             </div>
             <!-- End .header-left -->
 
             <div class="py-0 my-0 header-right w-lg-max">
-                <div
-                    class="p-0 m-0 header-icon header-search header-search-inline header-search-category d-sm-block d-none w-lg-max text-right mt-0">
-                    <a href="#" class="search-toggle" role="button"><i class="icon-magnifier"></i></a>
-                    <form action="{{ route('product-search') }}" method="GET">
-                        <div class="header-search-wrapper mr-1">
-                            <input type="search" class="form-control" name="search_product_name"
-                                id="search_product_name" placeholder="Search..." required>
-                            <div class="select-custom">
-                                <select id="cat" name="cat">
-                                  
-                                </select>
-                            </div>
-                            <!-- End .select-custom -->
-                            <button class="btn icon-magnifier p-0" title="search" type="submit"></button>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width:100%;background-color:#efeee9;">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#" style="font-size: 20px;">Home</a>
+                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">Products</a>
+                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">About Us</a>
+                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">News</a>
+                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">Contact</a>
+                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">Privacy Policy</a>
                         </div>
-                        <!-- End .header-search-wrapper -->
-                    </form>
-                </div>
-                <!-- End .header-search -->
-
-                {{-- <div class="header-contact header-wishlist d-lg-flex pl-4 pr-sm-4 pr-2 ml-2">
-                    <a href="wishlist.html" class="header-icon mr-0" title="wishlist"><i
-                            class="icon-wishlist-2" style="width: 3px;"></i></a>
-                    <h6 class="text-capitalize"><span>Favorites</span><a href="login.html">Wishlist</a>
-                    </h6>
-                </div> --}}
-                @if (!Auth::user())
-                        <div class="header-contact d-lg-flex pr-sm-4 pr-2">
-                            <a href="{{ route('customer_login') }}" class="header-icon mr-0" title="login"><i
-                                    class="icon-user-2"></i></a>
-                            <h6 class="text-capitalize"><span class="ls-n-20">Welcome</span><a
-                                    href="login.html">Sign In
-                                    / Register</a></h6>
-                        </div>
-                @else
-                    <div class="header-contact d-lg-flex pr-sm-4 pr-2">
-                        <a onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="header-icon mr-0" title="logout">
-                            <i class="fas fa-sign-out-alt"></i>
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            {{ csrf_field() }}
-                        </form>
                     </div>
-                @endif
-                <div class="separator"></div>
-
-                <div class="cart-dropdown-wrapper d-flex align-items-center pt-2">
-                    <span class="cart-subtotal text-right font2 mr-3">Shopping Cart
-                        <span class="cart-price d-block font2">$0.00</span>
-                    </span>
-
-                    <div class="dropdown cart-dropdown">
-                        <a href="#" title="Cart" class="dropdown-toggle dropdown-arrow cart-toggle" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                            <i class="icon-cart-thick"></i>
-                            <span class="cart-count badge-circle bg-info">
-                            </span>
-                        </a>
-
-                        <div class="cart-overlay"></div>
-
-                        <div class="dropdown-menu mobile-cart">
-                            <a href="#" title="Close (Esc)" class="btn-close">×</a>
-                            <div class="dropdown-cart-header ml-2">Shopping Cart</div>
-                            <div class="dropdownmenu-wrapper custom-scrollbar minicart">
-                                <!-- End .dropdown-cart-header -->
-                                @include('ecommerce.header-card-popup')
-                                <!-- End .dropdownmenu-wrapper -->
-                            </div>
-                        </div>
-                        <!-- End .dropdown-menu -->
-                    </div>
-                    <!-- End .dropdown -->
-                </div>
+                </nav>
             </div>
             <!-- End .header-right -->
         </div>
