@@ -109,47 +109,6 @@
 
                                 <hr class="short-divider">
 
-                                <div class="price-box">
-                                    @if($productDetails->special_price)
-                                    <span class="h3">
-                                        {{ intval((($productDetails->regular_price - $productDetails->special_price) * 100)/$productDetails->regular_price) }}%
-                                    </span>
-                                    <br>
-                                    <span class="old-price">
-                                        @if (isset($currencySymbol->symbol))
-                                        <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                        @endif
-                                        {{ $productDetails->regular_price }}
-                                    </span>
-                                    <span class="product-price">
-                                        @if (isset($currencySymbol->symbol))
-                                        <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                        @endif
-                                        {{ $productDetails->special_price }}
-                                    </span>
-                                    @else
-                                    <span class="product-price">
-                                        @if (isset($currencySymbol->symbol))
-                                        <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                        @endif
-                                        {{ $productDetails->regular_price }}
-                                    </span>
-                                    @endif
-                                    <br>
-                                    <span class="product-price">
-                                        <span style="font-size: 14px;">
-                                          Total:
-                                        </span>
-                                        @if (isset($currencySymbol->symbol))
-                                        <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                        @endif
-                                        <span id="product_subtotal_{{ $productDetails->id }}" class="product-subtotal" style="font-size: 14px;">
-                                           {{ $productDetails->regular_price }}
-                                        </span>
-                                    </span>
-                                </div>
-                                <!-- End .price-box -->
-
                                 <div class="product-desc ls-0 font2">
                                     <p>
                                         @if($productDetails->ProductInfo)

@@ -127,7 +127,6 @@
                                 <div class="product-details">
                                     <div class="category-wrap">
                                         <div class="category-list">
-                                            <a href="{{ route('search-category-wise',['id'=>$product->Category->id]) }}" class="product-category">{{ $product->Category->name }}</a>
                                         </div>
                                     </div>
                                     <h3 class="product-title">
@@ -139,38 +138,7 @@
                                             @endif
                                         </a>
                                     </h3>
-                                    <div class="price-box">
-                                        @if($product['special_price'])
-                                        <span class="old-price">
-                                            @if (isset($currencySymbol->symbol))
-                                            <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                            @endif
-                                            {{ intval($product['regular_price']) }}
-                                        </span>
-                                        <span class="product-price">
-                                            @if (isset($currencySymbol->symbol))
-                                            <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                            @endif
-                                            {{ intval($product['special_price']) }}
-                                        </span>
-                                        @else
-                                        <span class="product-price">
-                                            @if (isset($currencySymbol->symbol))
-                                            <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                            @endif
-                                            {{ intval($product['regular_price']) }}
-                                        </span>
-                                        @endif
-                                    </div>
-                                 
-                                    <!-- End .price-box -->
                                 </div>
-                                <div class="product-action mt-1">
-                                    <a href="javascript:void(0);" class="btn-icon btn-add-cart product-type-simple product-type-simple-mobile add-to-card buy-now buy-now-button" data-product-id="{{ $product['id'] }}" style="background-color: #eae5ef;">
-                                           <i class="icon-shopping-cart"></i><span>ADD TO CART</span>
-                                    </a>
-                                </div>
-                                <!-- End .product-details -->
                             </div>
                         </div>
                         <!-- End .col-sm-4 -->

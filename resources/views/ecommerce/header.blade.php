@@ -110,11 +110,11 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-item nav-link active" href="#" style="font-size: 20px;">Home</a>
-                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">Products</a>
-                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">About Us</a>
+                            <a class="nav-item nav-link" href="{{ route('product-search') }}" style="font-size: 20px;">Products</a>
+                            <a class="nav-item nav-link" href="{{ route('about') }}" style="font-size: 20px;">About Us</a>
                             <a class="nav-item nav-link" href="#" style="font-size: 20px;">News</a>
-                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">Contact</a>
-                            <a class="nav-item nav-link" href="#" style="font-size: 20px;">Privacy Policy</a>
+                            <a class="nav-item nav-link" href="{{ route('contact') }}" style="font-size: 20px;">Contact</a>
+                            <a class="nav-item nav-link" href="{{ route('privacy-policy') }}" style="font-size: 20px;">Privacy Policy</a>
                         </div>
                     </div>
                 </nav>
