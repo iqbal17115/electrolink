@@ -109,14 +109,14 @@ class Category extends Component
             $Query->top_show = 0;
         }
         $Query->save();
-        if ($this->image1) {
-            $img1 = Image::make(public_path('storage/photo/'.$Query->image1))->fit(221, 179);
-            $img1->save();
-        }
-        if ($this->image2) {
-            $img2 = Image::make(public_path('storage/photo/'.$Query->image2))->fit(221, 179);
-            $img2->save();
-        }
+        // if ($this->image1) {
+        //     $img1 = Image::make(public_path('storage/photo/'.$Query->image1))->fit(221, 179);
+        //     $img1->save();
+        // }
+        // if ($this->image2) {
+        //     $img2 = Image::make(public_path('storage/photo/'.$Query->image2))->fit(221, 179);
+        //     $img2->save();
+        // }
         $this->reset();
         $this->CategoryModal();
         $this->emit('success', [

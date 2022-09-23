@@ -286,26 +286,9 @@
                         name:  'name'
                     },
                     {
-                        title: 'Category',
-                        data:  'category.name',
-                        name:  'Category.name',
-                        searchable:true,
-                        "orderable": false
-                    },
-                    {
                         title: 'Image',
                         data:  'product_id',
                         name:  'product_id'
-                    },
-                    {
-                        title: 'Regular Price',
-                        data:  'regular_price',
-                        name:  'regular_price'
-                    },
-                    {
-                        title: 'Special Price',
-                        data:  'special_price',
-                        name:  'special_price'
                     },
                     {
                         title: 'Status',

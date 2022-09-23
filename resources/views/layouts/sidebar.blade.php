@@ -22,6 +22,7 @@
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{route('product.product')}}">Add Product</a></li>
                         <li><a href="{{route('product.product-list')}}">All Product List</a></li>
+                        <li><a href="{{route('product.category')}}">Category</a></li>
                     </ul>
                 </li>
               
@@ -33,6 +34,7 @@
 
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{route('setting.slider')}}">Slider</a></li>
+                        <li><a href="{{route('setting.breaking-news')}}">News</a></li>
                         <li><a href="{{route('setting.companyinfo')}}">Company Info</a></li>
                     </ul>
                 </li>

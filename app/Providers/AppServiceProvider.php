@@ -47,6 +47,9 @@ class AppServiceProvider extends ServiceProvider
             $view->with('currencySymbol', Currency::whereIsActive(1)->first());
             $view->with('orders_count', Order::whereStatus('processing')->count());
             $view->with('ProfileSettings', ProfileSetting::first());
+            $view->with('categories1', Category::orderBy('id', 'desc')->get());
+            $view->with('categories', Category::orderBy('id', 'desc')->limit(6)->get());
+            $view->with('BreakingNews', BreakingNews::whereIsActive(1)->get());
 
             // Start Order Notification
             $view->with('notifications', Notification::where('status', null)->get());

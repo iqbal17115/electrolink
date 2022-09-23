@@ -1,13 +1,13 @@
 @extends('layouts.ecommerce')
 @section('content')
 <main class="main home">
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 m-0">
         <div class="row m-0">
             <!-- <div class="sidebar-overlay"></div> -->
 
-            <div class="col-lg-12">
-                <div class="main-content">
-                    <section class="home-section home-section-slider">
+            <div class="col-lg-12 mt-3">
+                <div class="main-content p-0 m-0">
+                    <section class="home-section home-section-slider pb-3 mb-1">
                         <div class="row">
 
                             {{-- deleted --}}
@@ -47,76 +47,91 @@
 
                             </div>
                     </section>
-<br>
-<br>
-<br>
-                    <section class="products-container mt-5">
-                        <div class="row">
-                            @foreach ($data['products'] as $FeaturedProduct)
-                            <div class="col-md-3">
-                            <div class="product-default inner-quickview inner-icon">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <section class="container">
 
-                                <figure>
-                                    <a href="{{ route('product-details', ['id' => $FeaturedProduct['id']]) }}">
-                                        <img @if(isset($FeaturedProduct['product_image_first']['image']) && $FeaturedProduct['product_image_first']['image']) src="{{ asset('storage/photo/' . $FeaturedProduct['product_image_first']['image']) }}" @else src="{{ asset('image-not-available.jpg') }}" @endif width="205" height="205" id="ProductImage" style="position: relative;" alt="product">
-                                    </a>
-
-                                    <div class="btn-icon-group">
-                                   
+                        <div class="row py-4">
+                            <div class="col-12">
+                                <div class="jumbotron jumbotron-fluid bg-info text-white text-center p-0 m-0">
+                                    <div class="container">
+                                        <h3 class="display-3">Welcome To {{ $companyInfo->name}}</h3>
+                                        <p class="lead">
+                                            <center>
+                                                <a class="btn btn-danger rounded btn-sm mb-1" href="{{ route('contact') }}">Contact</a>
+                                            </center>
+                                        </p>
                                     </div>
-                                </figure>
-                                <div class="product-details">
-                                    <div class="category-wrap">
-                                        <div class="category-list">
-                                        </div>
-                                    </div>
-                                    <h3 class="product-title">
-                                        <a href="{{ route('product-details', ['id' => $FeaturedProduct['id']]) }}">
-                                            @if (strlen($FeaturedProduct['name']) > 50)
-                                            {{ \Illuminate\Support\Str::limit($FeaturedProduct['name'], 50) . '...' }}
-                                            @else
-                                            {{ $FeaturedProduct['name'] }}
-                                            @endif
-                                        </a>
-                                    </h3>
-
-                                    <div class="price-box">
-                                        @if ($FeaturedProduct['special_price'])
-                                        @if (isset($currencySymbol->symbol))
-                                        <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                        @endif
-                                        <span class="old-price">
-
-                                            {{ intval($FeaturedProduct['regular_price']) }}
-                                        </span>
-                                        <span class="product-price">
-                                            @if (isset($currencySymbol->symbol))
-                                            <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                            @endif
-                                            {{ intval($FeaturedProduct['special_price']) }}
-                                        </span>
-                                        @else
-                                        <span class="product-price">
-                                            @if (isset($currencySymbol->symbol))
-                                            <span style="font-size: 14px;">{{ $currencySymbol->symbol }}</span>
-                                            @endif
-                                            {{ intval($FeaturedProduct['regular_price']) }}
-                                        </span>
-                                        @endif
-                                    </div>
-
-                                    <!-- End .price-box -->
                                 </div>
-                                <!-- End .product-details -->
                             </div>
+                            <div class="col-12">
+                                <h2 class="section-title ls-n-15 text-center pb-2 m-b-4">Our Products</h2>
+                            </div>
+                            @foreach ($categories as $category)
+                            <div class="col-md-2 appear-animate" data-animation-name="fadeIn" data-animation-delay="300" data-animation-duration="1000">
+                                <div class="product-default inner-quickview inner-icon">
+                                    <figure>
+                                        <center>
+                                        <a href="{{ route('search-category-wise', ['id' => $category->id]) }}">
+                                            <img style="height: 200px; width: 100%;" class="rounded" @if($category->image1)
+                                            src="{{ asset('storage/photo/' . $category->image1) }}"
+                                            @else
+                                            src="{{ asset('image-not-available.jpg') }}"
+                                            @endif
+                                            alt="productr" />
+                                        </a>
+                                        </center>
+                                    </figure>
+                                    
+                                </div>
+                                <div class="product-details">
+                                        
+                                        <div class="product-title text-center">
+                                            <center>          <a href="{{ route('search-category-wise', ['id' => $category->id]) }}">{{$category->name}}</a></center>
+                                            </center>
+                                        </div>
+                                    </div><!-- End .product-details -->
+                            </div>
+                            @endforeach
+                            <div class="col-12">
+                                <center>
+                                    <a class="btn btn-danger text-light rounded" href="{{ route('category') }}">SEE ALL PRODUCTS</a>
+                                </center>
+                            </div>
+                        </div>
+
+                        <hr class="mt-1 mb-1">
+
+                    </section>
+
+                    <section class="container">
+                        <div class="row py-4">
+                            <div class="col-12">
+                                <h2 class="section-title ls-n-15 text-center pb-2 m-b-4">Our News</h2>
+                            </div>
+                            @foreach ($BreakingNews as $breakingNews_value)
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <img class="card-img-top" @if($breakingNews_value->image1)
+                                            src="{{ asset('storage/photo/' . $breakingNews_value->image1) }}"
+                                            @endif alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a href="{{ route('news_details', ['id' => $breakingNews_value->id]) }}">{{$breakingNews_value->title}}</a></h5>
+                                        <p class="card-text">
+                                            @if (strlen($breakingNews_value->news) > 100)
+                                                        {{ \Illuminate\Support\Str::limit($breakingNews_value->news, 50) . '...' }}
+                                                    @else
+                                                        {{ $breakingNews_value->news }}
+                                                    @endif
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                             @endforeach
                         </div>
                     </section>
-
-
-                    <br>
-                    <br>
                     <br>
                     <br>
                     <!-- footer-area -->

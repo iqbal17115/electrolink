@@ -176,7 +176,8 @@ class Product extends Component
                     $Query->vendor_id = $Vendor->id;
                 }
             }
-
+            
+            $Query->category_id = $this->category_id;
             $Query->name = $this->name;
             $Query->is_active = $this->is_active;
             $Query->in_stock = $this->in_stock;

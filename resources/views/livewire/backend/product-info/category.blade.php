@@ -69,9 +69,6 @@
                                 <div class="form-group">
                                     <label class="control-label">Image 1 (221*179 jpg)</label>
                                     <div class="custom-file">
-                                        {{-- <input type="file" wire:model.lazy="image" class="custom-file-input"
-                                            id="customFile"> --}}
-
                                         <input type="file" wire:model.lazy="image1" x-ref="image1">
                                         @if (!$image1)
                                         @if($QueryUpdate)

@@ -27,6 +27,19 @@
                             <h4 class="card-title my-5">Add new product</h4>
 
                             <div class="row">
+                                <div class="col-sm-12">
+                                <div class="form-group" wire:ignore>
+                                        <label class="control-label">Category</label>
+                                        <select class="form-control select2" wire:model.lazy="category_id"
+                                            id="select2-dropdown">
+                                            <option>Select</option>
+                                            @foreach ($Categories as $category)
+                                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                            @endforeach
+                                        </select>
+                                        @error('category_id') <span class="error">{{ $message }}</span> @enderror
+                                    </div>
+                                </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="name">Product Name</label>

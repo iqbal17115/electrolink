@@ -70,14 +70,13 @@
         <!-- header-area-end -->
 
         <!-- main-area -->
-
         @yield('content')
         <!-- main-area-end -->
 
     </div>
 
     <!-- Start Mobile Responseive Footer -->
-    @include('ecommerce.mobile-responsive-footer')
+    <!-- @include('ecommerce.mobile-responsive-footer') -->
     <!-- Start Mobile Responseive Footer -->
 
     <a id="scroll-top" href="#top" title="Top" role="button"><i class="icon-angle-up"></i></a>

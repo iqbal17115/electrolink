@@ -133,6 +133,7 @@ Route::get('/product-search/', [HomeController::class, 'productSearch'])->name('
 Route::get('/feature-wise/{feature}', [HomeController::class, 'FeatureWise'])->name('feature-wise');
 Route::get('/all-category-wise/{id?}', [HomeController::class, 'allCategoryWise'])->name('all-category-wise');
 Route::get('/category/{id?}', [HomeController::class, 'Category'])->name('category');
+Route::get('/news_details/{id?}', [HomeController::class, 'newsDetails'])->name('news_details');
 Route::get('/sub-category/{id?}', [HomeController::class, 'SubCategory'])->name('sub-category');
 Route::get('/sub-sub-category/{id?}', [HomeController::class, 'SubSubCategory'])->name('sub-sub-category');
 Route::get('/search-category-wise/{id?}', [HomeController::class, 'searchByCategory'])->name('search-category-wise');

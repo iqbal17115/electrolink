@@ -4,13 +4,20 @@ namespace App\Http\Livewire\Backend\Setting;
 use App\Models\Backend\Setting\BreakingNews as BreakingNewsInfo;
 use Livewire\Component;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
+use Livewire\WithFileUploads;
 
 class BreakingNews extends Component
 {
+    use WithFileUploads;
+
     public $news;
+    public $title;
+    public $image1;
     public $is_active=1;
     public $BreakingNewsId;
     public $DeleteId;
+    public $QueryUpdate;
 
     public function ConfirmDelete(){
         $this->newsDelete($this->DeleteId);
@@ -26,6 +33,7 @@ class BreakingNews extends Component
     {
         $QueryUpdate = BreakingNewsInfo::find($id);
         $this->BreakingNewsId = $QueryUpdate->id;
+        $this->title = $QueryUpdate->title;
         $this->news = $QueryUpdate->news;
         $this->is_active = $QueryUpdate->is_active;
 		$this->emit('modal', 'breakingNews');
@@ -42,7 +50,8 @@ class BreakingNews extends Component
     {
         $this->validate([
             'news' => 'required',
-            'is_active' => 'required',
+            'title' => 'required',
+            'is_active' => 'required'
         ]);
         if ($this->BreakingNewsId) {
             $Query = BreakingNewsInfo::find($this->BreakingNewsId);
@@ -50,7 +59,14 @@ class BreakingNews extends Component
             $Query = new BreakingNewsInfo();
             $Query->created_by = Auth::id();
         }
-
+        if ($this->image1) {
+            if ($Query->image1) {
+                Storage::delete($Query->image1);
+            }
+            $path = $this->image1->store('/public/photo');
+            $Query->image1 = basename($path);
+        }
+        $Query->title = $this->title;
         $Query->news = $this->news;
         $Query->branch_id = Auth::user()->branch_id;
         $Query->is_active = $this->is_active;

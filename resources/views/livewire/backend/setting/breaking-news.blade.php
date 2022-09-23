@@ -2,7 +2,7 @@
 @endpush
 <div>
     <x-slot name="title">
-        Breaking News
+        News
     </x-slot>
     <div class="row">
         <div class="col-12">
@@ -12,7 +12,7 @@
                         <div class="col-sm-4">
                             <div class="search-box mr-2 mb-2 d-inline-block">
                                 <div class="position-relative">
-                                    <h4>Breaking News List</h4>
+                                    <h4>News List</h4>
                                 </div>
                             </div>
                         </div>
@@ -20,7 +20,7 @@
                             <div class="text-sm-right">
                                 <button type="button"
                                     class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2"
-                                    wire:click="breakingNewsModal"><i class="mdi mdi-plus mr-1"></i>Breaking
+                                    wire:click="breakingNewsModal"><i class="mdi mdi-plus mr-1"></i>
                                     News</button>
 
                             </div>
@@ -42,7 +42,7 @@
         <div class="modal-dialog modal-md">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title mt-0" id="myLargeModalLabel">Breaking News</h5>
+                    <h5 class="modal-title mt-0" id="myLargeModalLabel">News</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -50,6 +50,34 @@
                 <form wire:submit.prevent="breakingNewsSave">
                     <div class="modal-body">
                         <div class="row">
+                        <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="basicpill-lastname-input">Title</label>
+                                    <input class="form-control" type="text" wire:model.lazy="title"
+                                        placeholder="Enter Title">
+                                    @error('title') <span class="error">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
+                        <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="control-label">Image 1 (221*179 jpg)</label>
+                                    <div class="custom-file">
+                                        <input type="file" wire:model.lazy="image1" x-ref="image1">
+                                        @if (!$image1)
+                                        @if($QueryUpdate)
+                                        <img src="{{ asset('storage/photo/'.$QueryUpdate->image1)}}"
+                                            style="height:100px; weight:100px;" alt="Image1"
+                                            class="img-circle img-fluid">
+                                        @endif
+                                        @endif
+                                        @if ($image1)
+                                        <img src="{{ $image1->temporaryUrl() }}" style="height:100px; weight:100px;"
+                                            alt="Image" class="img-circle img-fluid">
+                                        @endif
+                                    </div>
+                                    @error('image1') <span class="error">{{ $message }}</span> @enderror
+                                </div>
+                            </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
                                     <textarea class="form-control" placeholder="News" wire:model.lazy="news"></textarea>
@@ -123,9 +151,19 @@
                         data: 'id'
                     },
                     {
+                        title: 'Title',
+                        data:   'title',
+                        name:   'title'
+                    },
+                    {
                         title: 'News',
                         data:   'news',
                         name:   'news'
+                    },
+                    {
+                        title: 'Image',
+                        data:   'image1',
+                        name:   'image1'
                     },
                     {
                         title: 'Action',

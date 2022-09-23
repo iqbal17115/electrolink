@@ -167,6 +167,11 @@ class DatatableController extends Controller
             ->addColumn('is_active', function ($data) {
                 return $data->is_active == 1 ? 'Active' : 'Inactive';
             })
+            ->addColumn('image1', function ($data) {
+                $url = asset('storage/photo/'.$data->image1);
+
+                return '<img src="'.$url.'" style="height:92px; weight:138px;" alt="Image" class="img-fluid mx-auto d-block"/>';
+            })
             ->addColumn('action', function ($data) {
                 $html = '';
                 if (Auth::User()->can('edit breaking_news')) {
@@ -178,7 +183,7 @@ class DatatableController extends Controller
 
                 return $html;
             })
-            ->rawColumns(['action', 'is_active'])
+            ->rawColumns(['action', 'image1', 'is_active'])
             ->toJSON();
     }
 
@@ -771,7 +776,7 @@ class DatatableController extends Controller
 
     public function ProductTable()
     {
-        $Query = Product::with('Category:id,name')->orderBy('id', 'desc');
+        $Query = Product::orderBy('id', 'desc');
 
         $this->i = 1;
 

@@ -14,6 +14,7 @@ use App\Models\Backend\ProductInfo\Category;
 use App\Models\Backend\ProductInfo\SubCategory;
 use App\Models\Backend\ProductInfo\SubSubCategory;
 use App\Models\Backend\ProductInfo\Product;
+use App\Models\Backend\Setting\BreakingNews;
 use App\Models\Backend\Setting\ShippingCharge;
 use App\Models\FrontEnd\AddToCard;
 use App\Models\FrontEnd\Order;
@@ -49,6 +50,10 @@ class HomeController extends Controller
     /**
      * HomeController constructor.
      */
+    public function newsDetails($id) {
+        $breaking_news_details = BreakingNews::whereId($id)->first();
+        return view('ecommerce.news_details', compact('breaking_news_details'));
+    }
     public function __construct(Product $product, AddToCard $addToCard, AddToCardService $addToCardService)
     {
         $this->product = $product;
@@ -425,13 +430,13 @@ class HomeController extends Controller
     public function searchByCategory($catId = null)
     {
         if ($catId) {
-            $data['products'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereCategoryId($catId)->whereIsActive(1)->paginate(50);
+            $data['products'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereCategoryId($catId)->paginate(50);
         } else {
             $data['products'] = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereIsActive(1)->paginate(50);
         }
         $newProducts = $this->product->with(['ProductImageFirst', 'ProductImageLast'])->whereIsActive(1)->orderBy('id', 'desc')->take(3)->get();
         $brands = Brand::get();
-
+// dd($data);
         return view('ecommerce.shop', [
             'data' => $data,
             'newProducts' => $newProducts,
