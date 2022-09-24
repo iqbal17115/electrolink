@@ -24,6 +24,7 @@ use App\Models\Backend\Setting\InvoiceSetting;
 use App\Models\Backend\Setting\Language;
 use App\Models\Backend\Setting\PaymentMethod;
 use App\Models\Backend\Setting\ShippingCharge;
+use App\Models\Backend\Setting\Testimonial;
 use App\Models\Backend\Setting\Vat;
 use App\Models\Backend\Setting\Warehouse;
 use App\Models\FrontEnd\Vendor;
@@ -153,7 +154,32 @@ class DatatableController extends Controller
             ->rawColumns(['action', 'is_active'])
             ->toJSON();
     }
+    public function TestimonialTable() {
+        $Query =  Testimonial::query()->orderBy('id', 'desc');
 
+        $this->i = 1;
+
+        return Datatables::of($Query)
+            ->addColumn('id', function ($data) {
+                return $this->i++;
+            })
+            ->addColumn('is_active', function ($data) {
+                return $data->is_active == 1 ? 'Active' : 'Inactive';
+            })
+            ->addColumn('action', function ($data) {
+                $html = '';
+                if (Auth::User()->can('edit breaking_news')) {
+                    $html .= '<button class="btn btn-primary btn-sm" onclick="callEdit('.$data->id.')"><i class="bx bx-edit font-size-18"></i></button>';
+                }
+                if (Auth::User()->can('edit breaking_news')) {
+                    $html .= '<button class="btn btn-danger btn-sm" onclick="callDelete('.$data->id.')"><i class="bx bx-window-close font-size-18"></i></button>';
+                }
+
+                return $html;
+            })
+            ->rawColumns(['action', 'is_active'])
+            ->toJSON();
+    }
     public function NewsListTable()
     {
         $Query = BreakingNews::query()->orderBy('id', 'desc');

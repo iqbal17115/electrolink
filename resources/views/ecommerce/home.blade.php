@@ -74,25 +74,25 @@
                                 <div class="product-default inner-quickview inner-icon">
                                     <figure>
                                         <center>
-                                        <a href="{{ route('search-category-wise', ['id' => $category->id]) }}">
-                                            <img style="height: 200px; width: 100%;" class="rounded" @if($category->image1)
-                                            src="{{ asset('storage/photo/' . $category->image1) }}"
-                                            @else
-                                            src="{{ asset('image-not-available.jpg') }}"
-                                            @endif
-                                            alt="productr" />
-                                        </a>
+                                            <a href="{{ route('search-category-wise', ['id' => $category->id]) }}">
+                                                <img style="height: 200px; width: 100%;" class="rounded" @if($category->image1)
+                                                src="{{ asset('storage/photo/' . $category->image1) }}"
+                                                @else
+                                                src="{{ asset('image-not-available.jpg') }}"
+                                                @endif
+                                                alt="productr" />
+                                            </a>
                                         </center>
                                     </figure>
-                                    
+
                                 </div>
                                 <div class="product-details">
-                                        
-                                        <div class="product-title text-center">
-                                            <center>          <a href="{{ route('search-category-wise', ['id' => $category->id]) }}">{{$category->name}}</a></center>
-                                            </center>
-                                        </div>
-                                    </div><!-- End .product-details -->
+
+                                    <div class="product-title text-center">
+                                        <center> <a href="{{ route('search-category-wise', ['id' => $category->id]) }}">{{$category->name}}</a></center>
+                                        </center>
+                                    </div>
+                                </div><!-- End .product-details -->
                             </div>
                             @endforeach
                             <div class="col-12">
@@ -115,16 +115,16 @@
                             <div class="col-md-4">
                                 <div class="card">
                                     <img class="card-img-top" @if($breakingNews_value->image1)
-                                            src="{{ asset('storage/photo/' . $breakingNews_value->image1) }}"
-                                            @endif alt="Card image cap">
+                                    src="{{ asset('storage/photo/' . $breakingNews_value->image1) }}"
+                                    @endif alt="Card image cap">
                                     <div class="card-body">
                                         <h5 class="card-title"><a href="{{ route('news_details', ['id' => $breakingNews_value->id]) }}">{{$breakingNews_value->title}}</a></h5>
                                         <p class="card-text">
                                             @if (strlen($breakingNews_value->news) > 100)
-                                                        {{ \Illuminate\Support\Str::limit($breakingNews_value->news, 50) . '...' }}
-                                                    @else
-                                                        {{ $breakingNews_value->news }}
-                                                    @endif
+                                            {{ \Illuminate\Support\Str::limit($breakingNews_value->news, 50) . '...' }}
+                                            @else
+                                            {{ $breakingNews_value->news }}
+                                            @endif
                                         </p>
                                     </div>
                                 </div>
@@ -132,8 +132,32 @@
                             @endforeach
                         </div>
                     </section>
-                    <br>
-                    <br>
+                    <section class="">
+                        <div class="col-md-12 appear-animate" data-animation-name="fadeInLeftShorter" data-animation-delay="400" data-animation-duration="1000">
+                            <div class="home-slider owl-carousel owl-theme" data-owl-options="{
+							'dots': false,
+							'nav': true
+						}">
+                                @foreach($testimonials as $testimonial)
+                                <div class="home-slide home-slide{{$testimonial->id}} banner banner-md-vw banner-sm-vw d-flex align-items-center">
+                                    <center>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{$testimonial->name}}</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">{{$testimonial->title}}</h6>
+                                            <p class="card-text">{{$testimonial->description}}</p>
+                                        </div>
+                                    </div>
+                                    </center>
+                                    <!-- End .banner-layer -->
+                                </div>
+                                <!-- End .home-slide -->
+                                @endforeach
+                            </div>
+                            <!-- End .home-slider -->
+                        </div>
+                        <!-- End .col-lg-9 -->
+                    </section>
                     <!-- footer-area -->
                     @include('ecommerce.footer')
                     <!-- footer-area-end -->

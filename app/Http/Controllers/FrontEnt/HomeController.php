@@ -50,6 +50,9 @@ class HomeController extends Controller
     /**
      * HomeController constructor.
      */
+    public function News() {
+        return view('ecommerce.news');
+    }
     public function newsDetails($id) {
         $breaking_news_details = BreakingNews::whereId($id)->first();
         return view('ecommerce.news_details', compact('breaking_news_details'));

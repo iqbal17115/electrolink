@@ -19,7 +19,7 @@
                     <li class="nav-item"><a class="nav-link" id="active1" href="{{ route('product-search') }}">Home</a></li>
                     <li class="nav-item"><a class="nav-link" id="active2" href="{{ route('product-search') }}">Products</a></li>
                     <li class="nav-item"><a class="nav-link" id="active3" href="{{ route('about') }}">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" id="active3" href="#Contact">News</a></li>
+                    <li class="nav-item"><a class="nav-link" id="active3" href="{{ route('news') }}">News</a></li>
                     <li class="nav-item"><a class="nav-link" id="active3" href="{{ route('contact') }}">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" id="active3" href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
                 </ul>

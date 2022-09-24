@@ -35,6 +35,7 @@
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="{{route('setting.slider')}}">Slider</a></li>
                         <li><a href="{{route('setting.breaking-news')}}">News</a></li>
+                        <li><a href="{{route('setting.testimonial')}}">Testimonial</a></li>
                         <li><a href="{{route('setting.companyinfo')}}">Company Info</a></li>
                     </ul>
                 </li>
