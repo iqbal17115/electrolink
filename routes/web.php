@@ -89,6 +89,7 @@ use App\Http\Livewire\UserManagement\AllUserList;
 
 use App\Http\Livewire\Backend\Offer\Offer;
 use App\Http\Livewire\Backend\Order\OrderEdit;
+use App\Http\Livewire\Backend\Setting\Why;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -242,6 +243,7 @@ Route::group(['middleware' => ['role:admin|user|manager|editor']], function () {
             Route::get('point-policy', PointPolicy::class)->name('point-policy');
             Route::get('breaking-news', BreakingNews::class)->name('breaking-news');
             Route::get('testimonial', Testimonial::class)->name('testimonial');
+            Route::get('why', Why::class)->name('why');
             Route::get('language', Language::class)->name('language');
             Route::get('manage-language/{id?}', ManageLanguage::class)->name('manage-language');
         });
@@ -373,6 +375,7 @@ Route::group(['middleware' => ['role:admin|user|manager|editor']], function () {
             Route::get('purchase_list', [DatatableController::class, 'PurchaseListTable'])->name('purchase_list');
             Route::get('sale_list', [DatatableController::class, 'SaleListTable'])->name('sale_list');
             Route::get('news_list', [DatatableController::class, 'NewsListTable'])->name('news_list');
+            Route::get('why_list', [DatatableController::class, 'WhyListTable'])->name('why_list');
             Route::get('testimonial_list', [DatatableController::class, 'TestimonialTable'])->name('testimonial_list');
             Route::get('language_list', [DatatableController::class, 'LanguageListTable'])->name('language_list');
             Route::get('manage_language_list', [DatatableController::class, 'LanguageListTable'])->name('manage_language_list');

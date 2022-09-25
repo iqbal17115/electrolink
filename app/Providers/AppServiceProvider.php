@@ -17,6 +17,7 @@ use App\Models\Inventory\Currency;
 use App\Models\Notification;
 use App\Models\Backend\Offer\Offer;
 use App\Models\Backend\Setting\Testimonial;
+use App\Models\Backend\Setting\Why;
 use App\Services\AddToCardService;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -44,6 +45,7 @@ class AppServiceProvider extends ServiceProvider
 
   
             $view->with('testimonials', Testimonial::orderBy('id', 'desc')->get());
+            $view->with('whies', Why::orderBy('id', 'desc')->get());
             $view->with('companyInfo', CompanyInfo::first());
             $view->with('InvoiceSetting', InvoiceSetting::first());
             $view->with('currencySymbol', Currency::whereIsActive(1)->first());

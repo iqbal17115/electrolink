@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 24, 2022 at 07:08 PM
+-- Generation Time: Sep 25, 2022 at 07:16 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -2106,7 +2106,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('RzIwgCS4vWnKir8Wf1zjkJ5R3DVGojCG7K8zSwgy', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiNFVoUHBQWWo3M002am0wbE9PeG12NEhZZkRMcEdBc01QNHpuNmJQQiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9uZXdzIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCRTN2JCNERwM0gyUi5CUnVQRno2ZjJlQkwydDVoS000clRkYXZoTENFQU14UkVlUEJiV09yUyI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTAkUzdiQjREcDNIMlIuQlJ1UEZ6NmYyZUJMMnQ1aEtNNHJUZGF2aExDRUFNeFJFZVBCYldPclMiO30=', 1664039230);
+('6wtnLTH0zkpx5mrYT9g7gvRYLhAHJfsuDvZwStpP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiNkVERXNETlZzclVScjRxVFZQcjZQekRrRUc5ckpCU28zMk9SQUthRSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTAkUzdiQjREcDNIMlIuQlJ1UEZ6NmYyZUJMMnQ1aEtNNHJUZGF2aExDRUFNeFJFZVBCYldPclMiO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJFM3YkI0RHAzSDJSLkJSdVBGejZmMmVCTDJ0NWhLTTRyVGRhdmhMQ0VBTXhSRWVQQmJXT3JTIjt9', 1664126090);
 
 -- --------------------------------------------------------
 
@@ -2561,6 +2561,34 @@ CREATE TABLE `warehouses` (
 INSERT INTO `warehouses` (`id`, `code`, `name`, `address`, `branch_id`, `created_by`, `is_default`, `is_active`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (3, 'W643457137', 'Defaul', 'etgdrfg', 1, 1, 1, 1, '2022-01-29 05:52:29', '2022-01-29 05:55:28', NULL);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `whies`
+--
+
+CREATE TABLE `whies` (
+  `id` int(11) NOT NULL,
+  `title` varchar(191) DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `image` text DEFAULT NULL,
+  `branch_id` int(11) NOT NULL,
+  `created_by` int(11) NOT NULL,
+  `is_active` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `whies`
+--
+
+INSERT INTO `whies` (`id`, `title`, `description`, `image`, `branch_id`, `created_by`, `is_active`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'Where does it come from?', 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\n', 'DeexDKHFrYYYtqFMOZIsVs9YpCW7BdwzfFDluTdQ.webp', 1, 1, 1, '2022-09-25 10:08:25', '2022-09-25 10:08:25', NULL),
+(2, 'Where can I get some?', 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn\'t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.\n\n', 'Xe1i3E9VEowjI3VQmrxd4Hq3aT9HwObj9KjfkLbq.jpg', 1, 1, 1, '2022-09-25 10:09:00', '2022-09-25 10:09:00', NULL),
+(3, 'Why do we use it?', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n\n', 'TiPoN1zaitEylmyjQs8wCZxgStiZofZSbfoSFaBq.jpg', 1, 1, 1, '2022-09-25 10:10:05', '2022-09-25 10:10:05', NULL);
+
 --
 -- Indexes for dumped tables
 --
@@ -2973,6 +3001,12 @@ ALTER TABLE `warehouses`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `whies`
+--
+ALTER TABLE `whies`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -3335,6 +3369,12 @@ ALTER TABLE `vendors`
 --
 ALTER TABLE `warehouses`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `whies`
+--
+ALTER TABLE `whies`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables

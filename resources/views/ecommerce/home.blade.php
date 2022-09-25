@@ -55,7 +55,7 @@
 
                         <div class="row py-4">
                             <div class="col-12">
-                                <div class="jumbotron jumbotron-fluid bg-info text-white text-center p-0 m-0">
+                                <div class="jumbotron jumbotron-fluid text-white text-center p-0 m-0" style="background-color: #e5f4f7;">
                                     <div class="container">
                                         <h3 class="display-3">Welcome To {{ $companyInfo->name}}</h3>
                                         <p class="lead">
@@ -129,6 +129,75 @@
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
+                        </div>
+                    </section>
+                    <section class="container">
+                        <div class="row py-4">
+                            <div class="col-12">
+                                <h2 class="section-title ls-n-15 text-center pb-2 m-b-4">Why {{ $companyInfo->name}}</h2>
+                                <div class="row">
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                    <p class="text-center text-dark">
+                                The {{ $companyInfo->name}}'s team believe the following principles are important:
+People make the difference, Professional integrity, Work as team, Take pride in our work and success.
+                                </p>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                </div>
+                               
+                            </div>
+                            @php  
+                            $i=1;
+                            @endphp
+                            @foreach ($whies as $why)
+                            @if($i%2==1)
+                            <div class="col-md-6">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                    <img class="card-img-top" style="height: 240px;" @if($breakingNews_value->image1)
+                                    src="{{ asset('storage/photo/' . $breakingNews_value->image1) }}"
+                                    @endif alt="Card image cap">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body" style="height: 280px;">
+                                        <h5 class="card-title"><a href="{{ route('news_details', ['id' => $breakingNews_value->id]) }}">{{$breakingNews_value->title}}</a></h5>
+                                        <p class="card-text">
+                                            {{ $breakingNews_value->news }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            @else
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body" style="height: 280px;">
+                                        <h5 class="card-title"><a href="{{ route('news_details', ['id' => $breakingNews_value->id]) }}">{{$breakingNews_value->title}}</a></h5>
+                                        <p class="card-text">
+                                            {{ $breakingNews_value->news }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                    <img class="card-img-top" style="height: 240px;" @if($breakingNews_value->image1)
+                                    src="{{ asset('storage/photo/' . $breakingNews_value->image1) }}"
+                                    @endif alt="Card image cap">
+                                    </div>
+                                </div>
+                            </div>
+                            @endif
+                            @php
+$i++;
+                            @endphp
                             @endforeach
                         </div>
                     </section>

@@ -22,17 +22,12 @@
 
     <div class="footer-middle">
         <div class="row">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-4">
                 <div class="widget">
                     <h3 class="widget-title">Customer Services</h3>
                     <div class="widget-content">
                         <ul>
                             <li><a href="{{route('contact-us')}}">Help Center</a></li>
-                            <li>
-                                <a href="{{route('return-policy')}}">
-                                    Returns policy
-                                </a>
-                            </li>
                             <li>
                                 <a href="{{route('contact')}}">
                                     Contact Us
@@ -42,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-4">
                 <div class="widget">
                     <h3 class="widget-title">Menu</h3>
                     <div class="widget-content">
@@ -66,29 +61,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="widget">
-                    <h3 class="widget-title">My Account</h3>
-                    <div class="widget-content">
-                        <ul>
-                            <li>
-                                <a href="{{route('my-account')}}">
-                                    My Account
-                                </a>
-                            </li>
-                            <li><a href="#">Order Tracking</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-4">
                 <div class="widget">
                     <h3 class="widget-title">Follow Us</h3>
                     <div class="widget-content">
                         <div class="social-icons">
                             <a @if($companyInfo) href="{{$companyInfo->facebook_link}}" @endif class="social-icon social-facebook icon-facebook" target="_blank" title="Facebook"></a>
-                            <a href="#" class="social-icon social-twitter icon-twitter" target="_blank" title="Twitter"></a>
-                            <a href="#" class="social-icon social-instagram icon-instagram" target="_blank" title="Instagram"></a>
                         </div>
                     </div>
                 </div>
